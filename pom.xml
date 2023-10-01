@@ -102,7 +102,7 @@
                             <goal>schema</goal>
                         </goals>
                         <configuration>
-                            <sourceDirectory>src/main/resources/newconfig/avro</sourceDirectory>
+                            <sourceDirectory>src/main/resources/newconfig/avro/</sourceDirectory>
                             <outputDirectory>${project.basedir}/src/main/java/</outputDirectory>
                             <includes>
                                 <include>*.avsc</include>

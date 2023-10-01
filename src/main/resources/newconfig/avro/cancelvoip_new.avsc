@@ -1,7 +1,7 @@
 {
   "type": "record",
   "name": "VoIPWorkOrder",
-  "namespace": "com.example.publisherdemo.voipworkorder.dto.avro.req",
+  "namespace": "com.hughes.billing.voipworkorder.dto.avro.req",
   "fields": [
     {
       "name": "MessageHeader",

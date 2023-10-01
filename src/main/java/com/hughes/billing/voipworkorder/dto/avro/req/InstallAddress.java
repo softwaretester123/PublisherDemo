@@ -3,7 +3,7 @@
  *
  * DO NOT EDIT DIRECTLY
  */
-package com.example.publisherdemo.voipworkorder.dto.avro.req;
+package com.hughes.billing.voipworkorder.dto.avro.req;
 
 import org.apache.avro.specific.SpecificData;
 import org.apache.avro.message.BinaryMessageEncoder;
@@ -13,8 +13,8 @@ import org.apache.avro.message.SchemaStore;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class InstallAddress extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 8559113351430896573L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"InstallAddress\",\"namespace\":\"com.example.publisherdemo.voipworkorder.dto.avro.req\",\"fields\":[{\"name\":\"Address1\",\"type\":\"string\"},{\"name\":\"Address2\",\"type\":[\"string\",\"null\"]},{\"name\":\"City\",\"type\":\"string\"},{\"name\":\"State\",\"type\":\"string\"},{\"name\":\"Zip\",\"type\":\"string\"},{\"name\":\"Country\",\"type\":\"string\"}]}");
+  private static final long serialVersionUID = -8075332782678147760L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"InstallAddress\",\"namespace\":\"com.hughes.billing.voipworkorder.dto.avro.req\",\"fields\":[{\"name\":\"Address1\",\"type\":\"string\"},{\"name\":\"Address2\",\"type\":[\"string\",\"null\"]},{\"name\":\"City\",\"type\":\"string\"},{\"name\":\"State\",\"type\":\"string\"},{\"name\":\"Zip\",\"type\":\"string\"},{\"name\":\"Country\",\"type\":\"string\"}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
 
   private static SpecificData MODEL$ = new SpecificData();
@@ -211,8 +211,8 @@ public class InstallAddress extends org.apache.avro.specific.SpecificRecordBase 
    * Creates a new InstallAddress RecordBuilder.
    * @return A new InstallAddress RecordBuilder
    */
-  public static com.example.publisherdemo.voipworkorder.dto.avro.req.InstallAddress.Builder newBuilder() {
-    return new com.example.publisherdemo.voipworkorder.dto.avro.req.InstallAddress.Builder();
+  public static com.hughes.billing.voipworkorder.dto.avro.req.InstallAddress.Builder newBuilder() {
+    return new com.hughes.billing.voipworkorder.dto.avro.req.InstallAddress.Builder();
   }
 
   /**
@@ -220,8 +220,8 @@ public class InstallAddress extends org.apache.avro.specific.SpecificRecordBase 
    * @param other The existing builder to copy.
    * @return A new InstallAddress RecordBuilder
    */
-  public static com.example.publisherdemo.voipworkorder.dto.avro.req.InstallAddress.Builder newBuilder(com.example.publisherdemo.voipworkorder.dto.avro.req.InstallAddress.Builder other) {
-    return new com.example.publisherdemo.voipworkorder.dto.avro.req.InstallAddress.Builder(other);
+  public static com.hughes.billing.voipworkorder.dto.avro.req.InstallAddress.Builder newBuilder(com.hughes.billing.voipworkorder.dto.avro.req.InstallAddress.Builder other) {
+    return new com.hughes.billing.voipworkorder.dto.avro.req.InstallAddress.Builder(other);
   }
 
   /**
@@ -229,8 +229,8 @@ public class InstallAddress extends org.apache.avro.specific.SpecificRecordBase 
    * @param other The existing instance to copy.
    * @return A new InstallAddress RecordBuilder
    */
-  public static com.example.publisherdemo.voipworkorder.dto.avro.req.InstallAddress.Builder newBuilder(com.example.publisherdemo.voipworkorder.dto.avro.req.InstallAddress other) {
-    return new com.example.publisherdemo.voipworkorder.dto.avro.req.InstallAddress.Builder(other);
+  public static com.hughes.billing.voipworkorder.dto.avro.req.InstallAddress.Builder newBuilder(com.hughes.billing.voipworkorder.dto.avro.req.InstallAddress other) {
+    return new com.hughes.billing.voipworkorder.dto.avro.req.InstallAddress.Builder(other);
   }
 
   /**
@@ -255,7 +255,7 @@ public class InstallAddress extends org.apache.avro.specific.SpecificRecordBase 
      * Creates a Builder by copying an existing Builder.
      * @param other The existing Builder to copy.
      */
-    private Builder(com.example.publisherdemo.voipworkorder.dto.avro.req.InstallAddress.Builder other) {
+    private Builder(com.hughes.billing.voipworkorder.dto.avro.req.InstallAddress.Builder other) {
       super(other);
       if (isValidValue(fields()[0], other.Address1)) {
         this.Address1 = data().deepCopy(fields()[0].schema(), other.Address1);
@@ -287,7 +287,7 @@ public class InstallAddress extends org.apache.avro.specific.SpecificRecordBase 
      * Creates a Builder by copying an existing InstallAddress instance
      * @param other The existing instance to copy.
      */
-    private Builder(com.example.publisherdemo.voipworkorder.dto.avro.req.InstallAddress other) {
+    private Builder(com.hughes.billing.voipworkorder.dto.avro.req.InstallAddress other) {
             super(SCHEMA$);
       if (isValidValue(fields()[0], other.Address1)) {
         this.Address1 = data().deepCopy(fields()[0].schema(), other.Address1);
@@ -328,7 +328,7 @@ public class InstallAddress extends org.apache.avro.specific.SpecificRecordBase 
       * @param value The value of 'Address1'.
       * @return This builder.
       */
-    public com.example.publisherdemo.voipworkorder.dto.avro.req.InstallAddress.Builder setAddress1(java.lang.CharSequence value) {
+    public com.hughes.billing.voipworkorder.dto.avro.req.InstallAddress.Builder setAddress1(java.lang.CharSequence value) {
       validate(fields()[0], value);
       this.Address1 = value;
       fieldSetFlags()[0] = true;
@@ -348,7 +348,7 @@ public class InstallAddress extends org.apache.avro.specific.SpecificRecordBase 
       * Clears the value of the 'Address1' field.
       * @return This builder.
       */
-    public com.example.publisherdemo.voipworkorder.dto.avro.req.InstallAddress.Builder clearAddress1() {
+    public com.hughes.billing.voipworkorder.dto.avro.req.InstallAddress.Builder clearAddress1() {
       Address1 = null;
       fieldSetFlags()[0] = false;
       return this;
@@ -367,7 +367,7 @@ public class InstallAddress extends org.apache.avro.specific.SpecificRecordBase 
       * @param value The value of 'Address2'.
       * @return This builder.
       */
-    public com.example.publisherdemo.voipworkorder.dto.avro.req.InstallAddress.Builder setAddress2(java.lang.CharSequence value) {
+    public com.hughes.billing.voipworkorder.dto.avro.req.InstallAddress.Builder setAddress2(java.lang.CharSequence value) {
       validate(fields()[1], value);
       this.Address2 = value;
       fieldSetFlags()[1] = true;
@@ -387,7 +387,7 @@ public class InstallAddress extends org.apache.avro.specific.SpecificRecordBase 
       * Clears the value of the 'Address2' field.
       * @return This builder.
       */
-    public com.example.publisherdemo.voipworkorder.dto.avro.req.InstallAddress.Builder clearAddress2() {
+    public com.hughes.billing.voipworkorder.dto.avro.req.InstallAddress.Builder clearAddress2() {
       Address2 = null;
       fieldSetFlags()[1] = false;
       return this;
@@ -406,7 +406,7 @@ public class InstallAddress extends org.apache.avro.specific.SpecificRecordBase 
       * @param value The value of 'City'.
       * @return This builder.
       */
-    public com.example.publisherdemo.voipworkorder.dto.avro.req.InstallAddress.Builder setCity(java.lang.CharSequence value) {
+    public com.hughes.billing.voipworkorder.dto.avro.req.InstallAddress.Builder setCity(java.lang.CharSequence value) {
       validate(fields()[2], value);
       this.City = value;
       fieldSetFlags()[2] = true;
@@ -426,7 +426,7 @@ public class InstallAddress extends org.apache.avro.specific.SpecificRecordBase 
       * Clears the value of the 'City' field.
       * @return This builder.
       */
-    public com.example.publisherdemo.voipworkorder.dto.avro.req.InstallAddress.Builder clearCity() {
+    public com.hughes.billing.voipworkorder.dto.avro.req.InstallAddress.Builder clearCity() {
       City = null;
       fieldSetFlags()[2] = false;
       return this;
@@ -445,7 +445,7 @@ public class InstallAddress extends org.apache.avro.specific.SpecificRecordBase 
       * @param value The value of 'State'.
       * @return This builder.
       */
-    public com.example.publisherdemo.voipworkorder.dto.avro.req.InstallAddress.Builder setState(java.lang.CharSequence value) {
+    public com.hughes.billing.voipworkorder.dto.avro.req.InstallAddress.Builder setState(java.lang.CharSequence value) {
       validate(fields()[3], value);
       this.State = value;
       fieldSetFlags()[3] = true;
@@ -465,7 +465,7 @@ public class InstallAddress extends org.apache.avro.specific.SpecificRecordBase 
       * Clears the value of the 'State' field.
       * @return This builder.
       */
-    public com.example.publisherdemo.voipworkorder.dto.avro.req.InstallAddress.Builder clearState() {
+    public com.hughes.billing.voipworkorder.dto.avro.req.InstallAddress.Builder clearState() {
       State = null;
       fieldSetFlags()[3] = false;
       return this;
@@ -484,7 +484,7 @@ public class InstallAddress extends org.apache.avro.specific.SpecificRecordBase 
       * @param value The value of 'Zip'.
       * @return This builder.
       */
-    public com.example.publisherdemo.voipworkorder.dto.avro.req.InstallAddress.Builder setZip(java.lang.CharSequence value) {
+    public com.hughes.billing.voipworkorder.dto.avro.req.InstallAddress.Builder setZip(java.lang.CharSequence value) {
       validate(fields()[4], value);
       this.Zip = value;
       fieldSetFlags()[4] = true;
@@ -504,7 +504,7 @@ public class InstallAddress extends org.apache.avro.specific.SpecificRecordBase 
       * Clears the value of the 'Zip' field.
       * @return This builder.
       */
-    public com.example.publisherdemo.voipworkorder.dto.avro.req.InstallAddress.Builder clearZip() {
+    public com.hughes.billing.voipworkorder.dto.avro.req.InstallAddress.Builder clearZip() {
       Zip = null;
       fieldSetFlags()[4] = false;
       return this;
@@ -523,7 +523,7 @@ public class InstallAddress extends org.apache.avro.specific.SpecificRecordBase 
       * @param value The value of 'Country'.
       * @return This builder.
       */
-    public com.example.publisherdemo.voipworkorder.dto.avro.req.InstallAddress.Builder setCountry(java.lang.CharSequence value) {
+    public com.hughes.billing.voipworkorder.dto.avro.req.InstallAddress.Builder setCountry(java.lang.CharSequence value) {
       validate(fields()[5], value);
       this.Country = value;
       fieldSetFlags()[5] = true;
@@ -543,7 +543,7 @@ public class InstallAddress extends org.apache.avro.specific.SpecificRecordBase 
       * Clears the value of the 'Country' field.
       * @return This builder.
       */
-    public com.example.publisherdemo.voipworkorder.dto.avro.req.InstallAddress.Builder clearCountry() {
+    public com.hughes.billing.voipworkorder.dto.avro.req.InstallAddress.Builder clearCountry() {
       Country = null;
       fieldSetFlags()[5] = false;
       return this;

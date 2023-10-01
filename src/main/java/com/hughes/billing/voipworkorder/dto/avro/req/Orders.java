@@ -3,7 +3,7 @@
  *
  * DO NOT EDIT DIRECTLY
  */
-package com.example.publisherdemo.voipworkorder.dto.avro.req;
+package com.hughes.billing.voipworkorder.dto.avro.req;
 
 import org.apache.avro.specific.SpecificData;
 import org.apache.avro.message.BinaryMessageEncoder;
@@ -13,8 +13,8 @@ import org.apache.avro.message.SchemaStore;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Orders extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -2520726159337362991L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Orders\",\"namespace\":\"com.example.publisherdemo.voipworkorder.dto.avro.req\",\"fields\":[{\"name\":\"OrderInformation\",\"type\":{\"type\":\"record\",\"name\":\"OrderInformation\",\"fields\":[{\"name\":\"SAN\",\"type\":\"string\"}]}},{\"name\":\"InstallName\",\"type\":{\"type\":\"record\",\"name\":\"InstallName\",\"fields\":[{\"name\":\"FirstName\",\"type\":\"string\"},{\"name\":\"MiddleName\",\"type\":\"string\"},{\"name\":\"LastName\",\"type\":\"string\"}]}},{\"name\":\"InstallAddress\",\"type\":{\"type\":\"record\",\"name\":\"InstallAddress\",\"fields\":[{\"name\":\"Address1\",\"type\":\"string\"},{\"name\":\"Address2\",\"type\":[\"string\",\"null\"]},{\"name\":\"City\",\"type\":\"string\"},{\"name\":\"State\",\"type\":\"string\"},{\"name\":\"Zip\",\"type\":\"string\"},{\"name\":\"Country\",\"type\":\"string\"}]}},{\"name\":\"InstallPhone\",\"type\":{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"InstallPhone\",\"fields\":[{\"name\":\"Number\",\"type\":\"string\"},{\"name\":\"Type\",\"type\":[\"string\",\"null\"]}]}}},{\"name\":\"OrderAttributes\",\"type\":{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"OrderAttributes\",\"fields\":[{\"name\":\"name\",\"type\":\"string\"},{\"name\":\"value\",\"type\":\"string\"}]}}}]}");
+  private static final long serialVersionUID = 1307707387060458388L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Orders\",\"namespace\":\"com.hughes.billing.voipworkorder.dto.avro.req\",\"fields\":[{\"name\":\"OrderInformation\",\"type\":{\"type\":\"record\",\"name\":\"OrderInformation\",\"fields\":[{\"name\":\"SAN\",\"type\":\"string\"}]}},{\"name\":\"InstallName\",\"type\":{\"type\":\"record\",\"name\":\"InstallName\",\"fields\":[{\"name\":\"FirstName\",\"type\":\"string\"},{\"name\":\"MiddleName\",\"type\":\"string\"},{\"name\":\"LastName\",\"type\":\"string\"}]}},{\"name\":\"InstallAddress\",\"type\":{\"type\":\"record\",\"name\":\"InstallAddress\",\"fields\":[{\"name\":\"Address1\",\"type\":\"string\"},{\"name\":\"Address2\",\"type\":[\"string\",\"null\"]},{\"name\":\"City\",\"type\":\"string\"},{\"name\":\"State\",\"type\":\"string\"},{\"name\":\"Zip\",\"type\":\"string\"},{\"name\":\"Country\",\"type\":\"string\"}]}},{\"name\":\"InstallPhone\",\"type\":{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"InstallPhone\",\"fields\":[{\"name\":\"Number\",\"type\":\"string\"},{\"name\":\"Type\",\"type\":[\"string\",\"null\"]}]}}},{\"name\":\"OrderAttributes\",\"type\":{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"OrderAttributes\",\"fields\":[{\"name\":\"name\",\"type\":\"string\"},{\"name\":\"value\",\"type\":\"string\"}]}}}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
 
   private static SpecificData MODEL$ = new SpecificData();
@@ -51,11 +51,11 @@ public class Orders extends org.apache.avro.specific.SpecificRecordBase implemen
     return DECODER.decode(b);
   }
 
-  @Deprecated public com.example.publisherdemo.voipworkorder.dto.avro.req.OrderInformation OrderInformation;
-  @Deprecated public com.example.publisherdemo.voipworkorder.dto.avro.req.InstallName InstallName;
-  @Deprecated public com.example.publisherdemo.voipworkorder.dto.avro.req.InstallAddress InstallAddress;
-  @Deprecated public java.util.List<com.example.publisherdemo.voipworkorder.dto.avro.req.InstallPhone> InstallPhone;
-  @Deprecated public java.util.List<com.example.publisherdemo.voipworkorder.dto.avro.req.OrderAttributes> OrderAttributes;
+  @Deprecated public com.hughes.billing.voipworkorder.dto.avro.req.OrderInformation OrderInformation;
+  @Deprecated public com.hughes.billing.voipworkorder.dto.avro.req.InstallName InstallName;
+  @Deprecated public com.hughes.billing.voipworkorder.dto.avro.req.InstallAddress InstallAddress;
+  @Deprecated public java.util.List<com.hughes.billing.voipworkorder.dto.avro.req.InstallPhone> InstallPhone;
+  @Deprecated public java.util.List<com.hughes.billing.voipworkorder.dto.avro.req.OrderAttributes> OrderAttributes;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -72,7 +72,7 @@ public class Orders extends org.apache.avro.specific.SpecificRecordBase implemen
    * @param InstallPhone The new value for InstallPhone
    * @param OrderAttributes The new value for OrderAttributes
    */
-  public Orders(com.example.publisherdemo.voipworkorder.dto.avro.req.OrderInformation OrderInformation, com.example.publisherdemo.voipworkorder.dto.avro.req.InstallName InstallName, com.example.publisherdemo.voipworkorder.dto.avro.req.InstallAddress InstallAddress, java.util.List<com.example.publisherdemo.voipworkorder.dto.avro.req.InstallPhone> InstallPhone, java.util.List<com.example.publisherdemo.voipworkorder.dto.avro.req.OrderAttributes> OrderAttributes) {
+  public Orders(com.hughes.billing.voipworkorder.dto.avro.req.OrderInformation OrderInformation, com.hughes.billing.voipworkorder.dto.avro.req.InstallName InstallName, com.hughes.billing.voipworkorder.dto.avro.req.InstallAddress InstallAddress, java.util.List<com.hughes.billing.voipworkorder.dto.avro.req.InstallPhone> InstallPhone, java.util.List<com.hughes.billing.voipworkorder.dto.avro.req.OrderAttributes> OrderAttributes) {
     this.OrderInformation = OrderInformation;
     this.InstallName = InstallName;
     this.InstallAddress = InstallAddress;
@@ -97,11 +97,11 @@ public class Orders extends org.apache.avro.specific.SpecificRecordBase implemen
   @SuppressWarnings(value="unchecked")
   public void put(int field$, java.lang.Object value$) {
     switch (field$) {
-    case 0: OrderInformation = (com.example.publisherdemo.voipworkorder.dto.avro.req.OrderInformation)value$; break;
-    case 1: InstallName = (com.example.publisherdemo.voipworkorder.dto.avro.req.InstallName)value$; break;
-    case 2: InstallAddress = (com.example.publisherdemo.voipworkorder.dto.avro.req.InstallAddress)value$; break;
-    case 3: InstallPhone = (java.util.List<com.example.publisherdemo.voipworkorder.dto.avro.req.InstallPhone>)value$; break;
-    case 4: OrderAttributes = (java.util.List<com.example.publisherdemo.voipworkorder.dto.avro.req.OrderAttributes>)value$; break;
+    case 0: OrderInformation = (com.hughes.billing.voipworkorder.dto.avro.req.OrderInformation)value$; break;
+    case 1: InstallName = (com.hughes.billing.voipworkorder.dto.avro.req.InstallName)value$; break;
+    case 2: InstallAddress = (com.hughes.billing.voipworkorder.dto.avro.req.InstallAddress)value$; break;
+    case 3: InstallPhone = (java.util.List<com.hughes.billing.voipworkorder.dto.avro.req.InstallPhone>)value$; break;
+    case 4: OrderAttributes = (java.util.List<com.hughes.billing.voipworkorder.dto.avro.req.OrderAttributes>)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -110,7 +110,7 @@ public class Orders extends org.apache.avro.specific.SpecificRecordBase implemen
    * Gets the value of the 'OrderInformation' field.
    * @return The value of the 'OrderInformation' field.
    */
-  public com.example.publisherdemo.voipworkorder.dto.avro.req.OrderInformation getOrderInformation() {
+  public com.hughes.billing.voipworkorder.dto.avro.req.OrderInformation getOrderInformation() {
     return OrderInformation;
   }
 
@@ -118,7 +118,7 @@ public class Orders extends org.apache.avro.specific.SpecificRecordBase implemen
    * Sets the value of the 'OrderInformation' field.
    * @param value the value to set.
    */
-  public void setOrderInformation(com.example.publisherdemo.voipworkorder.dto.avro.req.OrderInformation value) {
+  public void setOrderInformation(com.hughes.billing.voipworkorder.dto.avro.req.OrderInformation value) {
     this.OrderInformation = value;
   }
 
@@ -126,7 +126,7 @@ public class Orders extends org.apache.avro.specific.SpecificRecordBase implemen
    * Gets the value of the 'InstallName' field.
    * @return The value of the 'InstallName' field.
    */
-  public com.example.publisherdemo.voipworkorder.dto.avro.req.InstallName getInstallName() {
+  public com.hughes.billing.voipworkorder.dto.avro.req.InstallName getInstallName() {
     return InstallName;
   }
 
@@ -134,7 +134,7 @@ public class Orders extends org.apache.avro.specific.SpecificRecordBase implemen
    * Sets the value of the 'InstallName' field.
    * @param value the value to set.
    */
-  public void setInstallName(com.example.publisherdemo.voipworkorder.dto.avro.req.InstallName value) {
+  public void setInstallName(com.hughes.billing.voipworkorder.dto.avro.req.InstallName value) {
     this.InstallName = value;
   }
 
@@ -142,7 +142,7 @@ public class Orders extends org.apache.avro.specific.SpecificRecordBase implemen
    * Gets the value of the 'InstallAddress' field.
    * @return The value of the 'InstallAddress' field.
    */
-  public com.example.publisherdemo.voipworkorder.dto.avro.req.InstallAddress getInstallAddress() {
+  public com.hughes.billing.voipworkorder.dto.avro.req.InstallAddress getInstallAddress() {
     return InstallAddress;
   }
 
@@ -150,7 +150,7 @@ public class Orders extends org.apache.avro.specific.SpecificRecordBase implemen
    * Sets the value of the 'InstallAddress' field.
    * @param value the value to set.
    */
-  public void setInstallAddress(com.example.publisherdemo.voipworkorder.dto.avro.req.InstallAddress value) {
+  public void setInstallAddress(com.hughes.billing.voipworkorder.dto.avro.req.InstallAddress value) {
     this.InstallAddress = value;
   }
 
@@ -158,7 +158,7 @@ public class Orders extends org.apache.avro.specific.SpecificRecordBase implemen
    * Gets the value of the 'InstallPhone' field.
    * @return The value of the 'InstallPhone' field.
    */
-  public java.util.List<com.example.publisherdemo.voipworkorder.dto.avro.req.InstallPhone> getInstallPhone() {
+  public java.util.List<com.hughes.billing.voipworkorder.dto.avro.req.InstallPhone> getInstallPhone() {
     return InstallPhone;
   }
 
@@ -166,7 +166,7 @@ public class Orders extends org.apache.avro.specific.SpecificRecordBase implemen
    * Sets the value of the 'InstallPhone' field.
    * @param value the value to set.
    */
-  public void setInstallPhone(java.util.List<com.example.publisherdemo.voipworkorder.dto.avro.req.InstallPhone> value) {
+  public void setInstallPhone(java.util.List<com.hughes.billing.voipworkorder.dto.avro.req.InstallPhone> value) {
     this.InstallPhone = value;
   }
 
@@ -174,7 +174,7 @@ public class Orders extends org.apache.avro.specific.SpecificRecordBase implemen
    * Gets the value of the 'OrderAttributes' field.
    * @return The value of the 'OrderAttributes' field.
    */
-  public java.util.List<com.example.publisherdemo.voipworkorder.dto.avro.req.OrderAttributes> getOrderAttributes() {
+  public java.util.List<com.hughes.billing.voipworkorder.dto.avro.req.OrderAttributes> getOrderAttributes() {
     return OrderAttributes;
   }
 
@@ -182,7 +182,7 @@ public class Orders extends org.apache.avro.specific.SpecificRecordBase implemen
    * Sets the value of the 'OrderAttributes' field.
    * @param value the value to set.
    */
-  public void setOrderAttributes(java.util.List<com.example.publisherdemo.voipworkorder.dto.avro.req.OrderAttributes> value) {
+  public void setOrderAttributes(java.util.List<com.hughes.billing.voipworkorder.dto.avro.req.OrderAttributes> value) {
     this.OrderAttributes = value;
   }
 
@@ -190,8 +190,8 @@ public class Orders extends org.apache.avro.specific.SpecificRecordBase implemen
    * Creates a new Orders RecordBuilder.
    * @return A new Orders RecordBuilder
    */
-  public static com.example.publisherdemo.voipworkorder.dto.avro.req.Orders.Builder newBuilder() {
-    return new com.example.publisherdemo.voipworkorder.dto.avro.req.Orders.Builder();
+  public static com.hughes.billing.voipworkorder.dto.avro.req.Orders.Builder newBuilder() {
+    return new com.hughes.billing.voipworkorder.dto.avro.req.Orders.Builder();
   }
 
   /**
@@ -199,8 +199,8 @@ public class Orders extends org.apache.avro.specific.SpecificRecordBase implemen
    * @param other The existing builder to copy.
    * @return A new Orders RecordBuilder
    */
-  public static com.example.publisherdemo.voipworkorder.dto.avro.req.Orders.Builder newBuilder(com.example.publisherdemo.voipworkorder.dto.avro.req.Orders.Builder other) {
-    return new com.example.publisherdemo.voipworkorder.dto.avro.req.Orders.Builder(other);
+  public static com.hughes.billing.voipworkorder.dto.avro.req.Orders.Builder newBuilder(com.hughes.billing.voipworkorder.dto.avro.req.Orders.Builder other) {
+    return new com.hughes.billing.voipworkorder.dto.avro.req.Orders.Builder(other);
   }
 
   /**
@@ -208,8 +208,8 @@ public class Orders extends org.apache.avro.specific.SpecificRecordBase implemen
    * @param other The existing instance to copy.
    * @return A new Orders RecordBuilder
    */
-  public static com.example.publisherdemo.voipworkorder.dto.avro.req.Orders.Builder newBuilder(com.example.publisherdemo.voipworkorder.dto.avro.req.Orders other) {
-    return new com.example.publisherdemo.voipworkorder.dto.avro.req.Orders.Builder(other);
+  public static com.hughes.billing.voipworkorder.dto.avro.req.Orders.Builder newBuilder(com.hughes.billing.voipworkorder.dto.avro.req.Orders other) {
+    return new com.hughes.billing.voipworkorder.dto.avro.req.Orders.Builder(other);
   }
 
   /**
@@ -218,14 +218,14 @@ public class Orders extends org.apache.avro.specific.SpecificRecordBase implemen
   public static class Builder extends org.apache.avro.specific.SpecificRecordBuilderBase<Orders>
     implements org.apache.avro.data.RecordBuilder<Orders> {
 
-    private com.example.publisherdemo.voipworkorder.dto.avro.req.OrderInformation OrderInformation;
-    private com.example.publisherdemo.voipworkorder.dto.avro.req.OrderInformation.Builder OrderInformationBuilder;
-    private com.example.publisherdemo.voipworkorder.dto.avro.req.InstallName InstallName;
-    private com.example.publisherdemo.voipworkorder.dto.avro.req.InstallName.Builder InstallNameBuilder;
-    private com.example.publisherdemo.voipworkorder.dto.avro.req.InstallAddress InstallAddress;
-    private com.example.publisherdemo.voipworkorder.dto.avro.req.InstallAddress.Builder InstallAddressBuilder;
-    private java.util.List<com.example.publisherdemo.voipworkorder.dto.avro.req.InstallPhone> InstallPhone;
-    private java.util.List<com.example.publisherdemo.voipworkorder.dto.avro.req.OrderAttributes> OrderAttributes;
+    private com.hughes.billing.voipworkorder.dto.avro.req.OrderInformation OrderInformation;
+    private com.hughes.billing.voipworkorder.dto.avro.req.OrderInformation.Builder OrderInformationBuilder;
+    private com.hughes.billing.voipworkorder.dto.avro.req.InstallName InstallName;
+    private com.hughes.billing.voipworkorder.dto.avro.req.InstallName.Builder InstallNameBuilder;
+    private com.hughes.billing.voipworkorder.dto.avro.req.InstallAddress InstallAddress;
+    private com.hughes.billing.voipworkorder.dto.avro.req.InstallAddress.Builder InstallAddressBuilder;
+    private java.util.List<com.hughes.billing.voipworkorder.dto.avro.req.InstallPhone> InstallPhone;
+    private java.util.List<com.hughes.billing.voipworkorder.dto.avro.req.OrderAttributes> OrderAttributes;
 
     /** Creates a new Builder */
     private Builder() {
@@ -236,28 +236,28 @@ public class Orders extends org.apache.avro.specific.SpecificRecordBase implemen
      * Creates a Builder by copying an existing Builder.
      * @param other The existing Builder to copy.
      */
-    private Builder(com.example.publisherdemo.voipworkorder.dto.avro.req.Orders.Builder other) {
+    private Builder(com.hughes.billing.voipworkorder.dto.avro.req.Orders.Builder other) {
       super(other);
       if (isValidValue(fields()[0], other.OrderInformation)) {
         this.OrderInformation = data().deepCopy(fields()[0].schema(), other.OrderInformation);
         fieldSetFlags()[0] = true;
       }
       if (other.hasOrderInformationBuilder()) {
-        this.OrderInformationBuilder = com.example.publisherdemo.voipworkorder.dto.avro.req.OrderInformation.newBuilder(other.getOrderInformationBuilder());
+        this.OrderInformationBuilder = com.hughes.billing.voipworkorder.dto.avro.req.OrderInformation.newBuilder(other.getOrderInformationBuilder());
       }
       if (isValidValue(fields()[1], other.InstallName)) {
         this.InstallName = data().deepCopy(fields()[1].schema(), other.InstallName);
         fieldSetFlags()[1] = true;
       }
       if (other.hasInstallNameBuilder()) {
-        this.InstallNameBuilder = com.example.publisherdemo.voipworkorder.dto.avro.req.InstallName.newBuilder(other.getInstallNameBuilder());
+        this.InstallNameBuilder = com.hughes.billing.voipworkorder.dto.avro.req.InstallName.newBuilder(other.getInstallNameBuilder());
       }
       if (isValidValue(fields()[2], other.InstallAddress)) {
         this.InstallAddress = data().deepCopy(fields()[2].schema(), other.InstallAddress);
         fieldSetFlags()[2] = true;
       }
       if (other.hasInstallAddressBuilder()) {
-        this.InstallAddressBuilder = com.example.publisherdemo.voipworkorder.dto.avro.req.InstallAddress.newBuilder(other.getInstallAddressBuilder());
+        this.InstallAddressBuilder = com.hughes.billing.voipworkorder.dto.avro.req.InstallAddress.newBuilder(other.getInstallAddressBuilder());
       }
       if (isValidValue(fields()[3], other.InstallPhone)) {
         this.InstallPhone = data().deepCopy(fields()[3].schema(), other.InstallPhone);
@@ -273,7 +273,7 @@ public class Orders extends org.apache.avro.specific.SpecificRecordBase implemen
      * Creates a Builder by copying an existing Orders instance
      * @param other The existing instance to copy.
      */
-    private Builder(com.example.publisherdemo.voipworkorder.dto.avro.req.Orders other) {
+    private Builder(com.hughes.billing.voipworkorder.dto.avro.req.Orders other) {
             super(SCHEMA$);
       if (isValidValue(fields()[0], other.OrderInformation)) {
         this.OrderInformation = data().deepCopy(fields()[0].schema(), other.OrderInformation);
@@ -304,7 +304,7 @@ public class Orders extends org.apache.avro.specific.SpecificRecordBase implemen
       * Gets the value of the 'OrderInformation' field.
       * @return The value.
       */
-    public com.example.publisherdemo.voipworkorder.dto.avro.req.OrderInformation getOrderInformation() {
+    public com.hughes.billing.voipworkorder.dto.avro.req.OrderInformation getOrderInformation() {
       return OrderInformation;
     }
 
@@ -313,7 +313,7 @@ public class Orders extends org.apache.avro.specific.SpecificRecordBase implemen
       * @param value The value of 'OrderInformation'.
       * @return This builder.
       */
-    public com.example.publisherdemo.voipworkorder.dto.avro.req.Orders.Builder setOrderInformation(com.example.publisherdemo.voipworkorder.dto.avro.req.OrderInformation value) {
+    public com.hughes.billing.voipworkorder.dto.avro.req.Orders.Builder setOrderInformation(com.hughes.billing.voipworkorder.dto.avro.req.OrderInformation value) {
       validate(fields()[0], value);
       this.OrderInformationBuilder = null;
       this.OrderInformation = value;
@@ -333,12 +333,12 @@ public class Orders extends org.apache.avro.specific.SpecificRecordBase implemen
      * Gets the Builder instance for the 'OrderInformation' field and creates one if it doesn't exist yet.
      * @return This builder.
      */
-    public com.example.publisherdemo.voipworkorder.dto.avro.req.OrderInformation.Builder getOrderInformationBuilder() {
+    public com.hughes.billing.voipworkorder.dto.avro.req.OrderInformation.Builder getOrderInformationBuilder() {
       if (OrderInformationBuilder == null) {
         if (hasOrderInformation()) {
-          setOrderInformationBuilder(com.example.publisherdemo.voipworkorder.dto.avro.req.OrderInformation.newBuilder(OrderInformation));
+          setOrderInformationBuilder(com.hughes.billing.voipworkorder.dto.avro.req.OrderInformation.newBuilder(OrderInformation));
         } else {
-          setOrderInformationBuilder(com.example.publisherdemo.voipworkorder.dto.avro.req.OrderInformation.newBuilder());
+          setOrderInformationBuilder(com.hughes.billing.voipworkorder.dto.avro.req.OrderInformation.newBuilder());
         }
       }
       return OrderInformationBuilder;
@@ -349,7 +349,7 @@ public class Orders extends org.apache.avro.specific.SpecificRecordBase implemen
      * @param value The builder instance that must be set.
      * @return This builder.
      */
-    public com.example.publisherdemo.voipworkorder.dto.avro.req.Orders.Builder setOrderInformationBuilder(com.example.publisherdemo.voipworkorder.dto.avro.req.OrderInformation.Builder value) {
+    public com.hughes.billing.voipworkorder.dto.avro.req.Orders.Builder setOrderInformationBuilder(com.hughes.billing.voipworkorder.dto.avro.req.OrderInformation.Builder value) {
       clearOrderInformation();
       OrderInformationBuilder = value;
       return this;
@@ -367,7 +367,7 @@ public class Orders extends org.apache.avro.specific.SpecificRecordBase implemen
       * Clears the value of the 'OrderInformation' field.
       * @return This builder.
       */
-    public com.example.publisherdemo.voipworkorder.dto.avro.req.Orders.Builder clearOrderInformation() {
+    public com.hughes.billing.voipworkorder.dto.avro.req.Orders.Builder clearOrderInformation() {
       OrderInformation = null;
       OrderInformationBuilder = null;
       fieldSetFlags()[0] = false;
@@ -378,7 +378,7 @@ public class Orders extends org.apache.avro.specific.SpecificRecordBase implemen
       * Gets the value of the 'InstallName' field.
       * @return The value.
       */
-    public com.example.publisherdemo.voipworkorder.dto.avro.req.InstallName getInstallName() {
+    public com.hughes.billing.voipworkorder.dto.avro.req.InstallName getInstallName() {
       return InstallName;
     }
 
@@ -387,7 +387,7 @@ public class Orders extends org.apache.avro.specific.SpecificRecordBase implemen
       * @param value The value of 'InstallName'.
       * @return This builder.
       */
-    public com.example.publisherdemo.voipworkorder.dto.avro.req.Orders.Builder setInstallName(com.example.publisherdemo.voipworkorder.dto.avro.req.InstallName value) {
+    public com.hughes.billing.voipworkorder.dto.avro.req.Orders.Builder setInstallName(com.hughes.billing.voipworkorder.dto.avro.req.InstallName value) {
       validate(fields()[1], value);
       this.InstallNameBuilder = null;
       this.InstallName = value;
@@ -407,12 +407,12 @@ public class Orders extends org.apache.avro.specific.SpecificRecordBase implemen
      * Gets the Builder instance for the 'InstallName' field and creates one if it doesn't exist yet.
      * @return This builder.
      */
-    public com.example.publisherdemo.voipworkorder.dto.avro.req.InstallName.Builder getInstallNameBuilder() {
+    public com.hughes.billing.voipworkorder.dto.avro.req.InstallName.Builder getInstallNameBuilder() {
       if (InstallNameBuilder == null) {
         if (hasInstallName()) {
-          setInstallNameBuilder(com.example.publisherdemo.voipworkorder.dto.avro.req.InstallName.newBuilder(InstallName));
+          setInstallNameBuilder(com.hughes.billing.voipworkorder.dto.avro.req.InstallName.newBuilder(InstallName));
         } else {
-          setInstallNameBuilder(com.example.publisherdemo.voipworkorder.dto.avro.req.InstallName.newBuilder());
+          setInstallNameBuilder(com.hughes.billing.voipworkorder.dto.avro.req.InstallName.newBuilder());
         }
       }
       return InstallNameBuilder;
@@ -423,7 +423,7 @@ public class Orders extends org.apache.avro.specific.SpecificRecordBase implemen
      * @param value The builder instance that must be set.
      * @return This builder.
      */
-    public com.example.publisherdemo.voipworkorder.dto.avro.req.Orders.Builder setInstallNameBuilder(com.example.publisherdemo.voipworkorder.dto.avro.req.InstallName.Builder value) {
+    public com.hughes.billing.voipworkorder.dto.avro.req.Orders.Builder setInstallNameBuilder(com.hughes.billing.voipworkorder.dto.avro.req.InstallName.Builder value) {
       clearInstallName();
       InstallNameBuilder = value;
       return this;
@@ -441,7 +441,7 @@ public class Orders extends org.apache.avro.specific.SpecificRecordBase implemen
       * Clears the value of the 'InstallName' field.
       * @return This builder.
       */
-    public com.example.publisherdemo.voipworkorder.dto.avro.req.Orders.Builder clearInstallName() {
+    public com.hughes.billing.voipworkorder.dto.avro.req.Orders.Builder clearInstallName() {
       InstallName = null;
       InstallNameBuilder = null;
       fieldSetFlags()[1] = false;
@@ -452,7 +452,7 @@ public class Orders extends org.apache.avro.specific.SpecificRecordBase implemen
       * Gets the value of the 'InstallAddress' field.
       * @return The value.
       */
-    public com.example.publisherdemo.voipworkorder.dto.avro.req.InstallAddress getInstallAddress() {
+    public com.hughes.billing.voipworkorder.dto.avro.req.InstallAddress getInstallAddress() {
       return InstallAddress;
     }
 
@@ -461,7 +461,7 @@ public class Orders extends org.apache.avro.specific.SpecificRecordBase implemen
       * @param value The value of 'InstallAddress'.
       * @return This builder.
       */
-    public com.example.publisherdemo.voipworkorder.dto.avro.req.Orders.Builder setInstallAddress(com.example.publisherdemo.voipworkorder.dto.avro.req.InstallAddress value) {
+    public com.hughes.billing.voipworkorder.dto.avro.req.Orders.Builder setInstallAddress(com.hughes.billing.voipworkorder.dto.avro.req.InstallAddress value) {
       validate(fields()[2], value);
       this.InstallAddressBuilder = null;
       this.InstallAddress = value;
@@ -481,12 +481,12 @@ public class Orders extends org.apache.avro.specific.SpecificRecordBase implemen
      * Gets the Builder instance for the 'InstallAddress' field and creates one if it doesn't exist yet.
      * @return This builder.
      */
-    public com.example.publisherdemo.voipworkorder.dto.avro.req.InstallAddress.Builder getInstallAddressBuilder() {
+    public com.hughes.billing.voipworkorder.dto.avro.req.InstallAddress.Builder getInstallAddressBuilder() {
       if (InstallAddressBuilder == null) {
         if (hasInstallAddress()) {
-          setInstallAddressBuilder(com.example.publisherdemo.voipworkorder.dto.avro.req.InstallAddress.newBuilder(InstallAddress));
+          setInstallAddressBuilder(com.hughes.billing.voipworkorder.dto.avro.req.InstallAddress.newBuilder(InstallAddress));
         } else {
-          setInstallAddressBuilder(com.example.publisherdemo.voipworkorder.dto.avro.req.InstallAddress.newBuilder());
+          setInstallAddressBuilder(com.hughes.billing.voipworkorder.dto.avro.req.InstallAddress.newBuilder());
         }
       }
       return InstallAddressBuilder;
@@ -497,7 +497,7 @@ public class Orders extends org.apache.avro.specific.SpecificRecordBase implemen
      * @param value The builder instance that must be set.
      * @return This builder.
      */
-    public com.example.publisherdemo.voipworkorder.dto.avro.req.Orders.Builder setInstallAddressBuilder(com.example.publisherdemo.voipworkorder.dto.avro.req.InstallAddress.Builder value) {
+    public com.hughes.billing.voipworkorder.dto.avro.req.Orders.Builder setInstallAddressBuilder(com.hughes.billing.voipworkorder.dto.avro.req.InstallAddress.Builder value) {
       clearInstallAddress();
       InstallAddressBuilder = value;
       return this;
@@ -515,7 +515,7 @@ public class Orders extends org.apache.avro.specific.SpecificRecordBase implemen
       * Clears the value of the 'InstallAddress' field.
       * @return This builder.
       */
-    public com.example.publisherdemo.voipworkorder.dto.avro.req.Orders.Builder clearInstallAddress() {
+    public com.hughes.billing.voipworkorder.dto.avro.req.Orders.Builder clearInstallAddress() {
       InstallAddress = null;
       InstallAddressBuilder = null;
       fieldSetFlags()[2] = false;
@@ -526,7 +526,7 @@ public class Orders extends org.apache.avro.specific.SpecificRecordBase implemen
       * Gets the value of the 'InstallPhone' field.
       * @return The value.
       */
-    public java.util.List<com.example.publisherdemo.voipworkorder.dto.avro.req.InstallPhone> getInstallPhone() {
+    public java.util.List<com.hughes.billing.voipworkorder.dto.avro.req.InstallPhone> getInstallPhone() {
       return InstallPhone;
     }
 
@@ -535,7 +535,7 @@ public class Orders extends org.apache.avro.specific.SpecificRecordBase implemen
       * @param value The value of 'InstallPhone'.
       * @return This builder.
       */
-    public com.example.publisherdemo.voipworkorder.dto.avro.req.Orders.Builder setInstallPhone(java.util.List<com.example.publisherdemo.voipworkorder.dto.avro.req.InstallPhone> value) {
+    public com.hughes.billing.voipworkorder.dto.avro.req.Orders.Builder setInstallPhone(java.util.List<com.hughes.billing.voipworkorder.dto.avro.req.InstallPhone> value) {
       validate(fields()[3], value);
       this.InstallPhone = value;
       fieldSetFlags()[3] = true;
@@ -555,7 +555,7 @@ public class Orders extends org.apache.avro.specific.SpecificRecordBase implemen
       * Clears the value of the 'InstallPhone' field.
       * @return This builder.
       */
-    public com.example.publisherdemo.voipworkorder.dto.avro.req.Orders.Builder clearInstallPhone() {
+    public com.hughes.billing.voipworkorder.dto.avro.req.Orders.Builder clearInstallPhone() {
       InstallPhone = null;
       fieldSetFlags()[3] = false;
       return this;
@@ -565,7 +565,7 @@ public class Orders extends org.apache.avro.specific.SpecificRecordBase implemen
       * Gets the value of the 'OrderAttributes' field.
       * @return The value.
       */
-    public java.util.List<com.example.publisherdemo.voipworkorder.dto.avro.req.OrderAttributes> getOrderAttributes() {
+    public java.util.List<com.hughes.billing.voipworkorder.dto.avro.req.OrderAttributes> getOrderAttributes() {
       return OrderAttributes;
     }
 
@@ -574,7 +574,7 @@ public class Orders extends org.apache.avro.specific.SpecificRecordBase implemen
       * @param value The value of 'OrderAttributes'.
       * @return This builder.
       */
-    public com.example.publisherdemo.voipworkorder.dto.avro.req.Orders.Builder setOrderAttributes(java.util.List<com.example.publisherdemo.voipworkorder.dto.avro.req.OrderAttributes> value) {
+    public com.hughes.billing.voipworkorder.dto.avro.req.Orders.Builder setOrderAttributes(java.util.List<com.hughes.billing.voipworkorder.dto.avro.req.OrderAttributes> value) {
       validate(fields()[4], value);
       this.OrderAttributes = value;
       fieldSetFlags()[4] = true;
@@ -594,7 +594,7 @@ public class Orders extends org.apache.avro.specific.SpecificRecordBase implemen
       * Clears the value of the 'OrderAttributes' field.
       * @return This builder.
       */
-    public com.example.publisherdemo.voipworkorder.dto.avro.req.Orders.Builder clearOrderAttributes() {
+    public com.hughes.billing.voipworkorder.dto.avro.req.Orders.Builder clearOrderAttributes() {
       OrderAttributes = null;
       fieldSetFlags()[4] = false;
       return this;
@@ -608,20 +608,20 @@ public class Orders extends org.apache.avro.specific.SpecificRecordBase implemen
         if (OrderInformationBuilder != null) {
           record.OrderInformation = this.OrderInformationBuilder.build();
         } else {
-          record.OrderInformation = fieldSetFlags()[0] ? this.OrderInformation : (com.example.publisherdemo.voipworkorder.dto.avro.req.OrderInformation) defaultValue(fields()[0]);
+          record.OrderInformation = fieldSetFlags()[0] ? this.OrderInformation : (com.hughes.billing.voipworkorder.dto.avro.req.OrderInformation) defaultValue(fields()[0]);
         }
         if (InstallNameBuilder != null) {
           record.InstallName = this.InstallNameBuilder.build();
         } else {
-          record.InstallName = fieldSetFlags()[1] ? this.InstallName : (com.example.publisherdemo.voipworkorder.dto.avro.req.InstallName) defaultValue(fields()[1]);
+          record.InstallName = fieldSetFlags()[1] ? this.InstallName : (com.hughes.billing.voipworkorder.dto.avro.req.InstallName) defaultValue(fields()[1]);
         }
         if (InstallAddressBuilder != null) {
           record.InstallAddress = this.InstallAddressBuilder.build();
         } else {
-          record.InstallAddress = fieldSetFlags()[2] ? this.InstallAddress : (com.example.publisherdemo.voipworkorder.dto.avro.req.InstallAddress) defaultValue(fields()[2]);
+          record.InstallAddress = fieldSetFlags()[2] ? this.InstallAddress : (com.hughes.billing.voipworkorder.dto.avro.req.InstallAddress) defaultValue(fields()[2]);
         }
-        record.InstallPhone = fieldSetFlags()[3] ? this.InstallPhone : (java.util.List<com.example.publisherdemo.voipworkorder.dto.avro.req.InstallPhone>) defaultValue(fields()[3]);
-        record.OrderAttributes = fieldSetFlags()[4] ? this.OrderAttributes : (java.util.List<com.example.publisherdemo.voipworkorder.dto.avro.req.OrderAttributes>) defaultValue(fields()[4]);
+        record.InstallPhone = fieldSetFlags()[3] ? this.InstallPhone : (java.util.List<com.hughes.billing.voipworkorder.dto.avro.req.InstallPhone>) defaultValue(fields()[3]);
+        record.OrderAttributes = fieldSetFlags()[4] ? this.OrderAttributes : (java.util.List<com.hughes.billing.voipworkorder.dto.avro.req.OrderAttributes>) defaultValue(fields()[4]);
         return record;
       } catch (java.lang.Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

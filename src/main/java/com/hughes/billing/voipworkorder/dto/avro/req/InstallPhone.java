@@ -3,7 +3,7 @@
  *
  * DO NOT EDIT DIRECTLY
  */
-package com.example.publisherdemo.voipworkorder.dto.avro.req;
+package com.hughes.billing.voipworkorder.dto.avro.req;
 
 import org.apache.avro.specific.SpecificData;
 import org.apache.avro.message.BinaryMessageEncoder;
@@ -13,8 +13,8 @@ import org.apache.avro.message.SchemaStore;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class InstallPhone extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -4098201915120839361L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"InstallPhone\",\"namespace\":\"com.example.publisherdemo.voipworkorder.dto.avro.req\",\"fields\":[{\"name\":\"Number\",\"type\":\"string\"},{\"name\":\"Type\",\"type\":[\"string\",\"null\"]}]}");
+  private static final long serialVersionUID = -2967595915257227079L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"InstallPhone\",\"namespace\":\"com.hughes.billing.voipworkorder.dto.avro.req\",\"fields\":[{\"name\":\"Number\",\"type\":\"string\"},{\"name\":\"Type\",\"type\":[\"string\",\"null\"]}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
 
   private static SpecificData MODEL$ = new SpecificData();
@@ -127,8 +127,8 @@ public class InstallPhone extends org.apache.avro.specific.SpecificRecordBase im
    * Creates a new InstallPhone RecordBuilder.
    * @return A new InstallPhone RecordBuilder
    */
-  public static com.example.publisherdemo.voipworkorder.dto.avro.req.InstallPhone.Builder newBuilder() {
-    return new com.example.publisherdemo.voipworkorder.dto.avro.req.InstallPhone.Builder();
+  public static com.hughes.billing.voipworkorder.dto.avro.req.InstallPhone.Builder newBuilder() {
+    return new com.hughes.billing.voipworkorder.dto.avro.req.InstallPhone.Builder();
   }
 
   /**
@@ -136,8 +136,8 @@ public class InstallPhone extends org.apache.avro.specific.SpecificRecordBase im
    * @param other The existing builder to copy.
    * @return A new InstallPhone RecordBuilder
    */
-  public static com.example.publisherdemo.voipworkorder.dto.avro.req.InstallPhone.Builder newBuilder(com.example.publisherdemo.voipworkorder.dto.avro.req.InstallPhone.Builder other) {
-    return new com.example.publisherdemo.voipworkorder.dto.avro.req.InstallPhone.Builder(other);
+  public static com.hughes.billing.voipworkorder.dto.avro.req.InstallPhone.Builder newBuilder(com.hughes.billing.voipworkorder.dto.avro.req.InstallPhone.Builder other) {
+    return new com.hughes.billing.voipworkorder.dto.avro.req.InstallPhone.Builder(other);
   }
 
   /**
@@ -145,8 +145,8 @@ public class InstallPhone extends org.apache.avro.specific.SpecificRecordBase im
    * @param other The existing instance to copy.
    * @return A new InstallPhone RecordBuilder
    */
-  public static com.example.publisherdemo.voipworkorder.dto.avro.req.InstallPhone.Builder newBuilder(com.example.publisherdemo.voipworkorder.dto.avro.req.InstallPhone other) {
-    return new com.example.publisherdemo.voipworkorder.dto.avro.req.InstallPhone.Builder(other);
+  public static com.hughes.billing.voipworkorder.dto.avro.req.InstallPhone.Builder newBuilder(com.hughes.billing.voipworkorder.dto.avro.req.InstallPhone other) {
+    return new com.hughes.billing.voipworkorder.dto.avro.req.InstallPhone.Builder(other);
   }
 
   /**
@@ -167,7 +167,7 @@ public class InstallPhone extends org.apache.avro.specific.SpecificRecordBase im
      * Creates a Builder by copying an existing Builder.
      * @param other The existing Builder to copy.
      */
-    private Builder(com.example.publisherdemo.voipworkorder.dto.avro.req.InstallPhone.Builder other) {
+    private Builder(com.hughes.billing.voipworkorder.dto.avro.req.InstallPhone.Builder other) {
       super(other);
       if (isValidValue(fields()[0], other.Number)) {
         this.Number = data().deepCopy(fields()[0].schema(), other.Number);
@@ -183,7 +183,7 @@ public class InstallPhone extends org.apache.avro.specific.SpecificRecordBase im
      * Creates a Builder by copying an existing InstallPhone instance
      * @param other The existing instance to copy.
      */
-    private Builder(com.example.publisherdemo.voipworkorder.dto.avro.req.InstallPhone other) {
+    private Builder(com.hughes.billing.voipworkorder.dto.avro.req.InstallPhone other) {
             super(SCHEMA$);
       if (isValidValue(fields()[0], other.Number)) {
         this.Number = data().deepCopy(fields()[0].schema(), other.Number);
@@ -208,7 +208,7 @@ public class InstallPhone extends org.apache.avro.specific.SpecificRecordBase im
       * @param value The value of 'Number'.
       * @return This builder.
       */
-    public com.example.publisherdemo.voipworkorder.dto.avro.req.InstallPhone.Builder setNumber(java.lang.CharSequence value) {
+    public com.hughes.billing.voipworkorder.dto.avro.req.InstallPhone.Builder setNumber(java.lang.CharSequence value) {
       validate(fields()[0], value);
       this.Number = value;
       fieldSetFlags()[0] = true;
@@ -228,7 +228,7 @@ public class InstallPhone extends org.apache.avro.specific.SpecificRecordBase im
       * Clears the value of the 'Number' field.
       * @return This builder.
       */
-    public com.example.publisherdemo.voipworkorder.dto.avro.req.InstallPhone.Builder clearNumber() {
+    public com.hughes.billing.voipworkorder.dto.avro.req.InstallPhone.Builder clearNumber() {
       Number = null;
       fieldSetFlags()[0] = false;
       return this;
@@ -247,7 +247,7 @@ public class InstallPhone extends org.apache.avro.specific.SpecificRecordBase im
       * @param value The value of 'Type'.
       * @return This builder.
       */
-    public com.example.publisherdemo.voipworkorder.dto.avro.req.InstallPhone.Builder setType(java.lang.CharSequence value) {
+    public com.hughes.billing.voipworkorder.dto.avro.req.InstallPhone.Builder setType(java.lang.CharSequence value) {
       validate(fields()[1], value);
       this.Type = value;
       fieldSetFlags()[1] = true;
@@ -267,7 +267,7 @@ public class InstallPhone extends org.apache.avro.specific.SpecificRecordBase im
       * Clears the value of the 'Type' field.
       * @return This builder.
       */
-    public com.example.publisherdemo.voipworkorder.dto.avro.req.InstallPhone.Builder clearType() {
+    public com.hughes.billing.voipworkorder.dto.avro.req.InstallPhone.Builder clearType() {
       Type = null;
       fieldSetFlags()[1] = false;
       return this;

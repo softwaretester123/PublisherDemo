@@ -3,7 +3,7 @@
  *
  * DO NOT EDIT DIRECTLY
  */
-package com.example.publisherdemo.voipworkorder.dto.avro.req;
+package com.hughes.billing.voipworkorder.dto.avro.ack;
 
 import org.apache.avro.specific.SpecificData;
 import org.apache.avro.message.BinaryMessageEncoder;
@@ -13,8 +13,8 @@ import org.apache.avro.message.SchemaStore;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class MessageHeader extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -2840668902349383773L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"MessageHeader\",\"namespace\":\"com.example.publisherdemo.voipworkorder.dto.avro.req\",\"fields\":[{\"name\":\"TransactionSequenceId\",\"type\":\"string\"},{\"name\":\"TransactionDateTime\",\"type\":\"string\"},{\"name\":\"MessageName\",\"type\":\"string\"},{\"name\":\"Origin\",\"type\":\"string\"}]}");
+  private static final long serialVersionUID = 8264193980634448852L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"MessageHeader\",\"namespace\":\"com.hughes.billing.voipworkorder.dto.avro.ack\",\"fields\":[{\"name\":\"TransactionSequenceId\",\"type\":\"string\"},{\"name\":\"TransactionDateTime\",\"type\":\"string\"},{\"name\":\"MessageName\",\"type\":\"string\"},{\"name\":\"Origin\",\"type\":\"string\"},{\"name\":\"CorrelationId\",\"type\":\"string\"}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
 
   private static SpecificData MODEL$ = new SpecificData();
@@ -55,6 +55,7 @@ public class MessageHeader extends org.apache.avro.specific.SpecificRecordBase i
   @Deprecated public java.lang.CharSequence TransactionDateTime;
   @Deprecated public java.lang.CharSequence MessageName;
   @Deprecated public java.lang.CharSequence Origin;
+  @Deprecated public java.lang.CharSequence CorrelationId;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -69,12 +70,14 @@ public class MessageHeader extends org.apache.avro.specific.SpecificRecordBase i
    * @param TransactionDateTime The new value for TransactionDateTime
    * @param MessageName The new value for MessageName
    * @param Origin The new value for Origin
+   * @param CorrelationId The new value for CorrelationId
    */
-  public MessageHeader(java.lang.CharSequence TransactionSequenceId, java.lang.CharSequence TransactionDateTime, java.lang.CharSequence MessageName, java.lang.CharSequence Origin) {
+  public MessageHeader(java.lang.CharSequence TransactionSequenceId, java.lang.CharSequence TransactionDateTime, java.lang.CharSequence MessageName, java.lang.CharSequence Origin, java.lang.CharSequence CorrelationId) {
     this.TransactionSequenceId = TransactionSequenceId;
     this.TransactionDateTime = TransactionDateTime;
     this.MessageName = MessageName;
     this.Origin = Origin;
+    this.CorrelationId = CorrelationId;
   }
 
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
@@ -85,6 +88,7 @@ public class MessageHeader extends org.apache.avro.specific.SpecificRecordBase i
     case 1: return TransactionDateTime;
     case 2: return MessageName;
     case 3: return Origin;
+    case 4: return CorrelationId;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -97,6 +101,7 @@ public class MessageHeader extends org.apache.avro.specific.SpecificRecordBase i
     case 1: TransactionDateTime = (java.lang.CharSequence)value$; break;
     case 2: MessageName = (java.lang.CharSequence)value$; break;
     case 3: Origin = (java.lang.CharSequence)value$; break;
+    case 4: CorrelationId = (java.lang.CharSequence)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -166,11 +171,27 @@ public class MessageHeader extends org.apache.avro.specific.SpecificRecordBase i
   }
 
   /**
+   * Gets the value of the 'CorrelationId' field.
+   * @return The value of the 'CorrelationId' field.
+   */
+  public java.lang.CharSequence getCorrelationId() {
+    return CorrelationId;
+  }
+
+  /**
+   * Sets the value of the 'CorrelationId' field.
+   * @param value the value to set.
+   */
+  public void setCorrelationId(java.lang.CharSequence value) {
+    this.CorrelationId = value;
+  }
+
+  /**
    * Creates a new MessageHeader RecordBuilder.
    * @return A new MessageHeader RecordBuilder
    */
-  public static com.example.publisherdemo.voipworkorder.dto.avro.req.MessageHeader.Builder newBuilder() {
-    return new com.example.publisherdemo.voipworkorder.dto.avro.req.MessageHeader.Builder();
+  public static com.hughes.billing.voipworkorder.dto.avro.ack.MessageHeader.Builder newBuilder() {
+    return new com.hughes.billing.voipworkorder.dto.avro.ack.MessageHeader.Builder();
   }
 
   /**
@@ -178,8 +199,8 @@ public class MessageHeader extends org.apache.avro.specific.SpecificRecordBase i
    * @param other The existing builder to copy.
    * @return A new MessageHeader RecordBuilder
    */
-  public static com.example.publisherdemo.voipworkorder.dto.avro.req.MessageHeader.Builder newBuilder(com.example.publisherdemo.voipworkorder.dto.avro.req.MessageHeader.Builder other) {
-    return new com.example.publisherdemo.voipworkorder.dto.avro.req.MessageHeader.Builder(other);
+  public static com.hughes.billing.voipworkorder.dto.avro.ack.MessageHeader.Builder newBuilder(com.hughes.billing.voipworkorder.dto.avro.ack.MessageHeader.Builder other) {
+    return new com.hughes.billing.voipworkorder.dto.avro.ack.MessageHeader.Builder(other);
   }
 
   /**
@@ -187,8 +208,8 @@ public class MessageHeader extends org.apache.avro.specific.SpecificRecordBase i
    * @param other The existing instance to copy.
    * @return A new MessageHeader RecordBuilder
    */
-  public static com.example.publisherdemo.voipworkorder.dto.avro.req.MessageHeader.Builder newBuilder(com.example.publisherdemo.voipworkorder.dto.avro.req.MessageHeader other) {
-    return new com.example.publisherdemo.voipworkorder.dto.avro.req.MessageHeader.Builder(other);
+  public static com.hughes.billing.voipworkorder.dto.avro.ack.MessageHeader.Builder newBuilder(com.hughes.billing.voipworkorder.dto.avro.ack.MessageHeader other) {
+    return new com.hughes.billing.voipworkorder.dto.avro.ack.MessageHeader.Builder(other);
   }
 
   /**
@@ -201,6 +222,7 @@ public class MessageHeader extends org.apache.avro.specific.SpecificRecordBase i
     private java.lang.CharSequence TransactionDateTime;
     private java.lang.CharSequence MessageName;
     private java.lang.CharSequence Origin;
+    private java.lang.CharSequence CorrelationId;
 
     /** Creates a new Builder */
     private Builder() {
@@ -211,7 +233,7 @@ public class MessageHeader extends org.apache.avro.specific.SpecificRecordBase i
      * Creates a Builder by copying an existing Builder.
      * @param other The existing Builder to copy.
      */
-    private Builder(com.example.publisherdemo.voipworkorder.dto.avro.req.MessageHeader.Builder other) {
+    private Builder(com.hughes.billing.voipworkorder.dto.avro.ack.MessageHeader.Builder other) {
       super(other);
       if (isValidValue(fields()[0], other.TransactionSequenceId)) {
         this.TransactionSequenceId = data().deepCopy(fields()[0].schema(), other.TransactionSequenceId);
@@ -229,13 +251,17 @@ public class MessageHeader extends org.apache.avro.specific.SpecificRecordBase i
         this.Origin = data().deepCopy(fields()[3].schema(), other.Origin);
         fieldSetFlags()[3] = true;
       }
+      if (isValidValue(fields()[4], other.CorrelationId)) {
+        this.CorrelationId = data().deepCopy(fields()[4].schema(), other.CorrelationId);
+        fieldSetFlags()[4] = true;
+      }
     }
 
     /**
      * Creates a Builder by copying an existing MessageHeader instance
      * @param other The existing instance to copy.
      */
-    private Builder(com.example.publisherdemo.voipworkorder.dto.avro.req.MessageHeader other) {
+    private Builder(com.hughes.billing.voipworkorder.dto.avro.ack.MessageHeader other) {
             super(SCHEMA$);
       if (isValidValue(fields()[0], other.TransactionSequenceId)) {
         this.TransactionSequenceId = data().deepCopy(fields()[0].schema(), other.TransactionSequenceId);
@@ -253,6 +279,10 @@ public class MessageHeader extends org.apache.avro.specific.SpecificRecordBase i
         this.Origin = data().deepCopy(fields()[3].schema(), other.Origin);
         fieldSetFlags()[3] = true;
       }
+      if (isValidValue(fields()[4], other.CorrelationId)) {
+        this.CorrelationId = data().deepCopy(fields()[4].schema(), other.CorrelationId);
+        fieldSetFlags()[4] = true;
+      }
     }
 
     /**
@@ -268,7 +298,7 @@ public class MessageHeader extends org.apache.avro.specific.SpecificRecordBase i
       * @param value The value of 'TransactionSequenceId'.
       * @return This builder.
       */
-    public com.example.publisherdemo.voipworkorder.dto.avro.req.MessageHeader.Builder setTransactionSequenceId(java.lang.CharSequence value) {
+    public com.hughes.billing.voipworkorder.dto.avro.ack.MessageHeader.Builder setTransactionSequenceId(java.lang.CharSequence value) {
       validate(fields()[0], value);
       this.TransactionSequenceId = value;
       fieldSetFlags()[0] = true;
@@ -288,7 +318,7 @@ public class MessageHeader extends org.apache.avro.specific.SpecificRecordBase i
       * Clears the value of the 'TransactionSequenceId' field.
       * @return This builder.
       */
-    public com.example.publisherdemo.voipworkorder.dto.avro.req.MessageHeader.Builder clearTransactionSequenceId() {
+    public com.hughes.billing.voipworkorder.dto.avro.ack.MessageHeader.Builder clearTransactionSequenceId() {
       TransactionSequenceId = null;
       fieldSetFlags()[0] = false;
       return this;
@@ -307,7 +337,7 @@ public class MessageHeader extends org.apache.avro.specific.SpecificRecordBase i
       * @param value The value of 'TransactionDateTime'.
       * @return This builder.
       */
-    public com.example.publisherdemo.voipworkorder.dto.avro.req.MessageHeader.Builder setTransactionDateTime(java.lang.CharSequence value) {
+    public com.hughes.billing.voipworkorder.dto.avro.ack.MessageHeader.Builder setTransactionDateTime(java.lang.CharSequence value) {
       validate(fields()[1], value);
       this.TransactionDateTime = value;
       fieldSetFlags()[1] = true;
@@ -327,7 +357,7 @@ public class MessageHeader extends org.apache.avro.specific.SpecificRecordBase i
       * Clears the value of the 'TransactionDateTime' field.
       * @return This builder.
       */
-    public com.example.publisherdemo.voipworkorder.dto.avro.req.MessageHeader.Builder clearTransactionDateTime() {
+    public com.hughes.billing.voipworkorder.dto.avro.ack.MessageHeader.Builder clearTransactionDateTime() {
       TransactionDateTime = null;
       fieldSetFlags()[1] = false;
       return this;
@@ -346,7 +376,7 @@ public class MessageHeader extends org.apache.avro.specific.SpecificRecordBase i
       * @param value The value of 'MessageName'.
       * @return This builder.
       */
-    public com.example.publisherdemo.voipworkorder.dto.avro.req.MessageHeader.Builder setMessageName(java.lang.CharSequence value) {
+    public com.hughes.billing.voipworkorder.dto.avro.ack.MessageHeader.Builder setMessageName(java.lang.CharSequence value) {
       validate(fields()[2], value);
       this.MessageName = value;
       fieldSetFlags()[2] = true;
@@ -366,7 +396,7 @@ public class MessageHeader extends org.apache.avro.specific.SpecificRecordBase i
       * Clears the value of the 'MessageName' field.
       * @return This builder.
       */
-    public com.example.publisherdemo.voipworkorder.dto.avro.req.MessageHeader.Builder clearMessageName() {
+    public com.hughes.billing.voipworkorder.dto.avro.ack.MessageHeader.Builder clearMessageName() {
       MessageName = null;
       fieldSetFlags()[2] = false;
       return this;
@@ -385,7 +415,7 @@ public class MessageHeader extends org.apache.avro.specific.SpecificRecordBase i
       * @param value The value of 'Origin'.
       * @return This builder.
       */
-    public com.example.publisherdemo.voipworkorder.dto.avro.req.MessageHeader.Builder setOrigin(java.lang.CharSequence value) {
+    public com.hughes.billing.voipworkorder.dto.avro.ack.MessageHeader.Builder setOrigin(java.lang.CharSequence value) {
       validate(fields()[3], value);
       this.Origin = value;
       fieldSetFlags()[3] = true;
@@ -405,9 +435,48 @@ public class MessageHeader extends org.apache.avro.specific.SpecificRecordBase i
       * Clears the value of the 'Origin' field.
       * @return This builder.
       */
-    public com.example.publisherdemo.voipworkorder.dto.avro.req.MessageHeader.Builder clearOrigin() {
+    public com.hughes.billing.voipworkorder.dto.avro.ack.MessageHeader.Builder clearOrigin() {
       Origin = null;
       fieldSetFlags()[3] = false;
+      return this;
+    }
+
+    /**
+      * Gets the value of the 'CorrelationId' field.
+      * @return The value.
+      */
+    public java.lang.CharSequence getCorrelationId() {
+      return CorrelationId;
+    }
+
+    /**
+      * Sets the value of the 'CorrelationId' field.
+      * @param value The value of 'CorrelationId'.
+      * @return This builder.
+      */
+    public com.hughes.billing.voipworkorder.dto.avro.ack.MessageHeader.Builder setCorrelationId(java.lang.CharSequence value) {
+      validate(fields()[4], value);
+      this.CorrelationId = value;
+      fieldSetFlags()[4] = true;
+      return this;
+    }
+
+    /**
+      * Checks whether the 'CorrelationId' field has been set.
+      * @return True if the 'CorrelationId' field has been set, false otherwise.
+      */
+    public boolean hasCorrelationId() {
+      return fieldSetFlags()[4];
+    }
+
+
+    /**
+      * Clears the value of the 'CorrelationId' field.
+      * @return This builder.
+      */
+    public com.hughes.billing.voipworkorder.dto.avro.ack.MessageHeader.Builder clearCorrelationId() {
+      CorrelationId = null;
+      fieldSetFlags()[4] = false;
       return this;
     }
 
@@ -420,6 +489,7 @@ public class MessageHeader extends org.apache.avro.specific.SpecificRecordBase i
         record.TransactionDateTime = fieldSetFlags()[1] ? this.TransactionDateTime : (java.lang.CharSequence) defaultValue(fields()[1]);
         record.MessageName = fieldSetFlags()[2] ? this.MessageName : (java.lang.CharSequence) defaultValue(fields()[2]);
         record.Origin = fieldSetFlags()[3] ? this.Origin : (java.lang.CharSequence) defaultValue(fields()[3]);
+        record.CorrelationId = fieldSetFlags()[4] ? this.CorrelationId : (java.lang.CharSequence) defaultValue(fields()[4]);
         return record;
       } catch (java.lang.Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

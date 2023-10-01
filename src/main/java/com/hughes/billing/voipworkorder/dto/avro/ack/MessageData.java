@@ -3,7 +3,7 @@
  *
  * DO NOT EDIT DIRECTLY
  */
-package com.example.publisherdemo.voipworkorder.dto.avro.req;
+package com.hughes.billing.voipworkorder.dto.avro.ack;
 
 import org.apache.avro.specific.SpecificData;
 import org.apache.avro.message.BinaryMessageEncoder;
@@ -13,8 +13,8 @@ import org.apache.avro.message.SchemaStore;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class MessageData extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 8376271073559320883L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"MessageData\",\"namespace\":\"com.example.publisherdemo.voipworkorder.dto.avro.req\",\"fields\":[{\"name\":\"MessageParameters\",\"type\":{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"MessageParameters\",\"fields\":[{\"name\":\"name\",\"type\":\"string\"},{\"name\":\"value\",\"type\":\"string\"}]}}},{\"name\":\"Orders\",\"type\":{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Orders\",\"fields\":[{\"name\":\"OrderInformation\",\"type\":{\"type\":\"record\",\"name\":\"OrderInformation\",\"fields\":[{\"name\":\"SAN\",\"type\":\"string\"}]}},{\"name\":\"InstallName\",\"type\":{\"type\":\"record\",\"name\":\"InstallName\",\"fields\":[{\"name\":\"FirstName\",\"type\":\"string\"},{\"name\":\"MiddleName\",\"type\":\"string\"},{\"name\":\"LastName\",\"type\":\"string\"}]}},{\"name\":\"InstallAddress\",\"type\":{\"type\":\"record\",\"name\":\"InstallAddress\",\"fields\":[{\"name\":\"Address1\",\"type\":\"string\"},{\"name\":\"Address2\",\"type\":[\"string\",\"null\"]},{\"name\":\"City\",\"type\":\"string\"},{\"name\":\"State\",\"type\":\"string\"},{\"name\":\"Zip\",\"type\":\"string\"},{\"name\":\"Country\",\"type\":\"string\"}]}},{\"name\":\"InstallPhone\",\"type\":{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"InstallPhone\",\"fields\":[{\"name\":\"Number\",\"type\":\"string\"},{\"name\":\"Type\",\"type\":[\"string\",\"null\"]}]}}},{\"name\":\"OrderAttributes\",\"type\":{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"OrderAttributes\",\"fields\":[{\"name\":\"name\",\"type\":\"string\"},{\"name\":\"value\",\"type\":\"string\"}]}}}]}}}]}");
+  private static final long serialVersionUID = -8421918263501761063L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"MessageData\",\"namespace\":\"com.hughes.billing.voipworkorder.dto.avro.ack\",\"fields\":[{\"name\":\"MessageParameters\",\"type\":{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"MessageParameters\",\"fields\":[{\"name\":\"name\",\"type\":\"string\"},{\"name\":\"value\",\"type\":\"string\"}]}}},{\"name\":\"Orders\",\"type\":{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Orders\",\"fields\":[{\"name\":\"OrderInformation\",\"type\":{\"type\":\"record\",\"name\":\"OrderInformation\",\"fields\":[{\"name\":\"SAN\",\"type\":\"string\"}]}}]}}}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
 
   private static SpecificData MODEL$ = new SpecificData();
@@ -51,8 +51,8 @@ public class MessageData extends org.apache.avro.specific.SpecificRecordBase imp
     return DECODER.decode(b);
   }
 
-  @Deprecated public java.util.List<com.example.publisherdemo.voipworkorder.dto.avro.req.MessageParameters> MessageParameters;
-  @Deprecated public java.util.List<com.example.publisherdemo.voipworkorder.dto.avro.req.Orders> Orders;
+  @Deprecated public java.util.List<com.hughes.billing.voipworkorder.dto.avro.ack.MessageParameters> MessageParameters;
+  @Deprecated public java.util.List<com.hughes.billing.voipworkorder.dto.avro.ack.Orders> Orders;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -66,7 +66,7 @@ public class MessageData extends org.apache.avro.specific.SpecificRecordBase imp
    * @param MessageParameters The new value for MessageParameters
    * @param Orders The new value for Orders
    */
-  public MessageData(java.util.List<com.example.publisherdemo.voipworkorder.dto.avro.req.MessageParameters> MessageParameters, java.util.List<com.example.publisherdemo.voipworkorder.dto.avro.req.Orders> Orders) {
+  public MessageData(java.util.List<com.hughes.billing.voipworkorder.dto.avro.ack.MessageParameters> MessageParameters, java.util.List<com.hughes.billing.voipworkorder.dto.avro.ack.Orders> Orders) {
     this.MessageParameters = MessageParameters;
     this.Orders = Orders;
   }
@@ -85,8 +85,8 @@ public class MessageData extends org.apache.avro.specific.SpecificRecordBase imp
   @SuppressWarnings(value="unchecked")
   public void put(int field$, java.lang.Object value$) {
     switch (field$) {
-    case 0: MessageParameters = (java.util.List<com.example.publisherdemo.voipworkorder.dto.avro.req.MessageParameters>)value$; break;
-    case 1: Orders = (java.util.List<com.example.publisherdemo.voipworkorder.dto.avro.req.Orders>)value$; break;
+    case 0: MessageParameters = (java.util.List<com.hughes.billing.voipworkorder.dto.avro.ack.MessageParameters>)value$; break;
+    case 1: Orders = (java.util.List<com.hughes.billing.voipworkorder.dto.avro.ack.Orders>)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -95,7 +95,7 @@ public class MessageData extends org.apache.avro.specific.SpecificRecordBase imp
    * Gets the value of the 'MessageParameters' field.
    * @return The value of the 'MessageParameters' field.
    */
-  public java.util.List<com.example.publisherdemo.voipworkorder.dto.avro.req.MessageParameters> getMessageParameters() {
+  public java.util.List<com.hughes.billing.voipworkorder.dto.avro.ack.MessageParameters> getMessageParameters() {
     return MessageParameters;
   }
 
@@ -103,7 +103,7 @@ public class MessageData extends org.apache.avro.specific.SpecificRecordBase imp
    * Sets the value of the 'MessageParameters' field.
    * @param value the value to set.
    */
-  public void setMessageParameters(java.util.List<com.example.publisherdemo.voipworkorder.dto.avro.req.MessageParameters> value) {
+  public void setMessageParameters(java.util.List<com.hughes.billing.voipworkorder.dto.avro.ack.MessageParameters> value) {
     this.MessageParameters = value;
   }
 
@@ -111,7 +111,7 @@ public class MessageData extends org.apache.avro.specific.SpecificRecordBase imp
    * Gets the value of the 'Orders' field.
    * @return The value of the 'Orders' field.
    */
-  public java.util.List<com.example.publisherdemo.voipworkorder.dto.avro.req.Orders> getOrders() {
+  public java.util.List<com.hughes.billing.voipworkorder.dto.avro.ack.Orders> getOrders() {
     return Orders;
   }
 
@@ -119,7 +119,7 @@ public class MessageData extends org.apache.avro.specific.SpecificRecordBase imp
    * Sets the value of the 'Orders' field.
    * @param value the value to set.
    */
-  public void setOrders(java.util.List<com.example.publisherdemo.voipworkorder.dto.avro.req.Orders> value) {
+  public void setOrders(java.util.List<com.hughes.billing.voipworkorder.dto.avro.ack.Orders> value) {
     this.Orders = value;
   }
 
@@ -127,8 +127,8 @@ public class MessageData extends org.apache.avro.specific.SpecificRecordBase imp
    * Creates a new MessageData RecordBuilder.
    * @return A new MessageData RecordBuilder
    */
-  public static com.example.publisherdemo.voipworkorder.dto.avro.req.MessageData.Builder newBuilder() {
-    return new com.example.publisherdemo.voipworkorder.dto.avro.req.MessageData.Builder();
+  public static com.hughes.billing.voipworkorder.dto.avro.ack.MessageData.Builder newBuilder() {
+    return new com.hughes.billing.voipworkorder.dto.avro.ack.MessageData.Builder();
   }
 
   /**
@@ -136,8 +136,8 @@ public class MessageData extends org.apache.avro.specific.SpecificRecordBase imp
    * @param other The existing builder to copy.
    * @return A new MessageData RecordBuilder
    */
-  public static com.example.publisherdemo.voipworkorder.dto.avro.req.MessageData.Builder newBuilder(com.example.publisherdemo.voipworkorder.dto.avro.req.MessageData.Builder other) {
-    return new com.example.publisherdemo.voipworkorder.dto.avro.req.MessageData.Builder(other);
+  public static com.hughes.billing.voipworkorder.dto.avro.ack.MessageData.Builder newBuilder(com.hughes.billing.voipworkorder.dto.avro.ack.MessageData.Builder other) {
+    return new com.hughes.billing.voipworkorder.dto.avro.ack.MessageData.Builder(other);
   }
 
   /**
@@ -145,8 +145,8 @@ public class MessageData extends org.apache.avro.specific.SpecificRecordBase imp
    * @param other The existing instance to copy.
    * @return A new MessageData RecordBuilder
    */
-  public static com.example.publisherdemo.voipworkorder.dto.avro.req.MessageData.Builder newBuilder(com.example.publisherdemo.voipworkorder.dto.avro.req.MessageData other) {
-    return new com.example.publisherdemo.voipworkorder.dto.avro.req.MessageData.Builder(other);
+  public static com.hughes.billing.voipworkorder.dto.avro.ack.MessageData.Builder newBuilder(com.hughes.billing.voipworkorder.dto.avro.ack.MessageData other) {
+    return new com.hughes.billing.voipworkorder.dto.avro.ack.MessageData.Builder(other);
   }
 
   /**
@@ -155,8 +155,8 @@ public class MessageData extends org.apache.avro.specific.SpecificRecordBase imp
   public static class Builder extends org.apache.avro.specific.SpecificRecordBuilderBase<MessageData>
     implements org.apache.avro.data.RecordBuilder<MessageData> {
 
-    private java.util.List<com.example.publisherdemo.voipworkorder.dto.avro.req.MessageParameters> MessageParameters;
-    private java.util.List<com.example.publisherdemo.voipworkorder.dto.avro.req.Orders> Orders;
+    private java.util.List<com.hughes.billing.voipworkorder.dto.avro.ack.MessageParameters> MessageParameters;
+    private java.util.List<com.hughes.billing.voipworkorder.dto.avro.ack.Orders> Orders;
 
     /** Creates a new Builder */
     private Builder() {
@@ -167,7 +167,7 @@ public class MessageData extends org.apache.avro.specific.SpecificRecordBase imp
      * Creates a Builder by copying an existing Builder.
      * @param other The existing Builder to copy.
      */
-    private Builder(com.example.publisherdemo.voipworkorder.dto.avro.req.MessageData.Builder other) {
+    private Builder(com.hughes.billing.voipworkorder.dto.avro.ack.MessageData.Builder other) {
       super(other);
       if (isValidValue(fields()[0], other.MessageParameters)) {
         this.MessageParameters = data().deepCopy(fields()[0].schema(), other.MessageParameters);
@@ -183,7 +183,7 @@ public class MessageData extends org.apache.avro.specific.SpecificRecordBase imp
      * Creates a Builder by copying an existing MessageData instance
      * @param other The existing instance to copy.
      */
-    private Builder(com.example.publisherdemo.voipworkorder.dto.avro.req.MessageData other) {
+    private Builder(com.hughes.billing.voipworkorder.dto.avro.ack.MessageData other) {
             super(SCHEMA$);
       if (isValidValue(fields()[0], other.MessageParameters)) {
         this.MessageParameters = data().deepCopy(fields()[0].schema(), other.MessageParameters);
@@ -199,7 +199,7 @@ public class MessageData extends org.apache.avro.specific.SpecificRecordBase imp
       * Gets the value of the 'MessageParameters' field.
       * @return The value.
       */
-    public java.util.List<com.example.publisherdemo.voipworkorder.dto.avro.req.MessageParameters> getMessageParameters() {
+    public java.util.List<com.hughes.billing.voipworkorder.dto.avro.ack.MessageParameters> getMessageParameters() {
       return MessageParameters;
     }
 
@@ -208,7 +208,7 @@ public class MessageData extends org.apache.avro.specific.SpecificRecordBase imp
       * @param value The value of 'MessageParameters'.
       * @return This builder.
       */
-    public com.example.publisherdemo.voipworkorder.dto.avro.req.MessageData.Builder setMessageParameters(java.util.List<com.example.publisherdemo.voipworkorder.dto.avro.req.MessageParameters> value) {
+    public com.hughes.billing.voipworkorder.dto.avro.ack.MessageData.Builder setMessageParameters(java.util.List<com.hughes.billing.voipworkorder.dto.avro.ack.MessageParameters> value) {
       validate(fields()[0], value);
       this.MessageParameters = value;
       fieldSetFlags()[0] = true;
@@ -228,7 +228,7 @@ public class MessageData extends org.apache.avro.specific.SpecificRecordBase imp
       * Clears the value of the 'MessageParameters' field.
       * @return This builder.
       */
-    public com.example.publisherdemo.voipworkorder.dto.avro.req.MessageData.Builder clearMessageParameters() {
+    public com.hughes.billing.voipworkorder.dto.avro.ack.MessageData.Builder clearMessageParameters() {
       MessageParameters = null;
       fieldSetFlags()[0] = false;
       return this;
@@ -238,7 +238,7 @@ public class MessageData extends org.apache.avro.specific.SpecificRecordBase imp
       * Gets the value of the 'Orders' field.
       * @return The value.
       */
-    public java.util.List<com.example.publisherdemo.voipworkorder.dto.avro.req.Orders> getOrders() {
+    public java.util.List<com.hughes.billing.voipworkorder.dto.avro.ack.Orders> getOrders() {
       return Orders;
     }
 
@@ -247,7 +247,7 @@ public class MessageData extends org.apache.avro.specific.SpecificRecordBase imp
       * @param value The value of 'Orders'.
       * @return This builder.
       */
-    public com.example.publisherdemo.voipworkorder.dto.avro.req.MessageData.Builder setOrders(java.util.List<com.example.publisherdemo.voipworkorder.dto.avro.req.Orders> value) {
+    public com.hughes.billing.voipworkorder.dto.avro.ack.MessageData.Builder setOrders(java.util.List<com.hughes.billing.voipworkorder.dto.avro.ack.Orders> value) {
       validate(fields()[1], value);
       this.Orders = value;
       fieldSetFlags()[1] = true;
@@ -267,7 +267,7 @@ public class MessageData extends org.apache.avro.specific.SpecificRecordBase imp
       * Clears the value of the 'Orders' field.
       * @return This builder.
       */
-    public com.example.publisherdemo.voipworkorder.dto.avro.req.MessageData.Builder clearOrders() {
+    public com.hughes.billing.voipworkorder.dto.avro.ack.MessageData.Builder clearOrders() {
       Orders = null;
       fieldSetFlags()[1] = false;
       return this;
@@ -278,8 +278,8 @@ public class MessageData extends org.apache.avro.specific.SpecificRecordBase imp
     public MessageData build() {
       try {
         MessageData record = new MessageData();
-        record.MessageParameters = fieldSetFlags()[0] ? this.MessageParameters : (java.util.List<com.example.publisherdemo.voipworkorder.dto.avro.req.MessageParameters>) defaultValue(fields()[0]);
-        record.Orders = fieldSetFlags()[1] ? this.Orders : (java.util.List<com.example.publisherdemo.voipworkorder.dto.avro.req.Orders>) defaultValue(fields()[1]);
+        record.MessageParameters = fieldSetFlags()[0] ? this.MessageParameters : (java.util.List<com.hughes.billing.voipworkorder.dto.avro.ack.MessageParameters>) defaultValue(fields()[0]);
+        record.Orders = fieldSetFlags()[1] ? this.Orders : (java.util.List<com.hughes.billing.voipworkorder.dto.avro.ack.Orders>) defaultValue(fields()[1]);
         return record;
       } catch (java.lang.Exception e) {
         throw new org.apache.avro.AvroRuntimeException(e);

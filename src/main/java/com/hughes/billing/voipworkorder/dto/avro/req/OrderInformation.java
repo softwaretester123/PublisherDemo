@@ -3,7 +3,7 @@
  *
  * DO NOT EDIT DIRECTLY
  */
-package com.example.publisherdemo.voipworkorder.dto.avro.ack;
+package com.hughes.billing.voipworkorder.dto.avro.req;
 
 import org.apache.avro.specific.SpecificData;
 import org.apache.avro.message.BinaryMessageEncoder;
@@ -13,8 +13,8 @@ import org.apache.avro.message.SchemaStore;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class OrderInformation extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 3195744540896656787L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"OrderInformation\",\"namespace\":\"com.example.publisherdemo.voipworkorder.dto.avro.ack\",\"fields\":[{\"name\":\"SAN\",\"type\":\"string\"}]}");
+  private static final long serialVersionUID = -6682424762652328883L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"OrderInformation\",\"namespace\":\"com.hughes.billing.voipworkorder.dto.avro.req\",\"fields\":[{\"name\":\"SAN\",\"type\":\"string\"}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
 
   private static SpecificData MODEL$ = new SpecificData();
@@ -106,8 +106,8 @@ public class OrderInformation extends org.apache.avro.specific.SpecificRecordBas
    * Creates a new OrderInformation RecordBuilder.
    * @return A new OrderInformation RecordBuilder
    */
-  public static com.example.publisherdemo.voipworkorder.dto.avro.ack.OrderInformation.Builder newBuilder() {
-    return new com.example.publisherdemo.voipworkorder.dto.avro.ack.OrderInformation.Builder();
+  public static com.hughes.billing.voipworkorder.dto.avro.req.OrderInformation.Builder newBuilder() {
+    return new com.hughes.billing.voipworkorder.dto.avro.req.OrderInformation.Builder();
   }
 
   /**
@@ -115,8 +115,8 @@ public class OrderInformation extends org.apache.avro.specific.SpecificRecordBas
    * @param other The existing builder to copy.
    * @return A new OrderInformation RecordBuilder
    */
-  public static com.example.publisherdemo.voipworkorder.dto.avro.ack.OrderInformation.Builder newBuilder(com.example.publisherdemo.voipworkorder.dto.avro.ack.OrderInformation.Builder other) {
-    return new com.example.publisherdemo.voipworkorder.dto.avro.ack.OrderInformation.Builder(other);
+  public static com.hughes.billing.voipworkorder.dto.avro.req.OrderInformation.Builder newBuilder(com.hughes.billing.voipworkorder.dto.avro.req.OrderInformation.Builder other) {
+    return new com.hughes.billing.voipworkorder.dto.avro.req.OrderInformation.Builder(other);
   }
 
   /**
@@ -124,8 +124,8 @@ public class OrderInformation extends org.apache.avro.specific.SpecificRecordBas
    * @param other The existing instance to copy.
    * @return A new OrderInformation RecordBuilder
    */
-  public static com.example.publisherdemo.voipworkorder.dto.avro.ack.OrderInformation.Builder newBuilder(com.example.publisherdemo.voipworkorder.dto.avro.ack.OrderInformation other) {
-    return new com.example.publisherdemo.voipworkorder.dto.avro.ack.OrderInformation.Builder(other);
+  public static com.hughes.billing.voipworkorder.dto.avro.req.OrderInformation.Builder newBuilder(com.hughes.billing.voipworkorder.dto.avro.req.OrderInformation other) {
+    return new com.hughes.billing.voipworkorder.dto.avro.req.OrderInformation.Builder(other);
   }
 
   /**
@@ -145,7 +145,7 @@ public class OrderInformation extends org.apache.avro.specific.SpecificRecordBas
      * Creates a Builder by copying an existing Builder.
      * @param other The existing Builder to copy.
      */
-    private Builder(com.example.publisherdemo.voipworkorder.dto.avro.ack.OrderInformation.Builder other) {
+    private Builder(com.hughes.billing.voipworkorder.dto.avro.req.OrderInformation.Builder other) {
       super(other);
       if (isValidValue(fields()[0], other.SAN)) {
         this.SAN = data().deepCopy(fields()[0].schema(), other.SAN);
@@ -157,7 +157,7 @@ public class OrderInformation extends org.apache.avro.specific.SpecificRecordBas
      * Creates a Builder by copying an existing OrderInformation instance
      * @param other The existing instance to copy.
      */
-    private Builder(com.example.publisherdemo.voipworkorder.dto.avro.ack.OrderInformation other) {
+    private Builder(com.hughes.billing.voipworkorder.dto.avro.req.OrderInformation other) {
             super(SCHEMA$);
       if (isValidValue(fields()[0], other.SAN)) {
         this.SAN = data().deepCopy(fields()[0].schema(), other.SAN);
@@ -178,7 +178,7 @@ public class OrderInformation extends org.apache.avro.specific.SpecificRecordBas
       * @param value The value of 'SAN'.
       * @return This builder.
       */
-    public com.example.publisherdemo.voipworkorder.dto.avro.ack.OrderInformation.Builder setSAN(java.lang.CharSequence value) {
+    public com.hughes.billing.voipworkorder.dto.avro.req.OrderInformation.Builder setSAN(java.lang.CharSequence value) {
       validate(fields()[0], value);
       this.SAN = value;
       fieldSetFlags()[0] = true;
@@ -198,7 +198,7 @@ public class OrderInformation extends org.apache.avro.specific.SpecificRecordBas
       * Clears the value of the 'SAN' field.
       * @return This builder.
       */
-    public com.example.publisherdemo.voipworkorder.dto.avro.ack.OrderInformation.Builder clearSAN() {
+    public com.hughes.billing.voipworkorder.dto.avro.req.OrderInformation.Builder clearSAN() {
       SAN = null;
       fieldSetFlags()[0] = false;
       return this;

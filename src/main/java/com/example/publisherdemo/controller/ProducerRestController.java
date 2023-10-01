@@ -1,7 +1,7 @@
 package com.example.publisherdemo.controller;
 
 import com.example.publisherdemo.gateway.OutboundChanel;
-import com.example.publisherdemo.voipworkorder.dto.avro.req.VoIPWorkOrder;
+import com.hughes.billing.voipworkorder.dto.avro.req.VoIPWorkOrder;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.avro.io.*;
 import org.apache.avro.specific.SpecificDatumReader;

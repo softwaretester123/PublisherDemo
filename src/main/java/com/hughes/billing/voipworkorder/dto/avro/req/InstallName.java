@@ -3,7 +3,7 @@
  *
  * DO NOT EDIT DIRECTLY
  */
-package com.example.publisherdemo.voipworkorder.dto.avro.req;
+package com.hughes.billing.voipworkorder.dto.avro.req;
 
 import org.apache.avro.specific.SpecificData;
 import org.apache.avro.message.BinaryMessageEncoder;
@@ -13,8 +13,8 @@ import org.apache.avro.message.SchemaStore;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class InstallName extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -3381913528866893836L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"InstallName\",\"namespace\":\"com.example.publisherdemo.voipworkorder.dto.avro.req\",\"fields\":[{\"name\":\"FirstName\",\"type\":\"string\"},{\"name\":\"MiddleName\",\"type\":\"string\"},{\"name\":\"LastName\",\"type\":\"string\"}]}");
+  private static final long serialVersionUID = -8670643146053884252L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"InstallName\",\"namespace\":\"com.hughes.billing.voipworkorder.dto.avro.req\",\"fields\":[{\"name\":\"FirstName\",\"type\":\"string\"},{\"name\":\"MiddleName\",\"type\":\"string\"},{\"name\":\"LastName\",\"type\":\"string\"}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
 
   private static SpecificData MODEL$ = new SpecificData();
@@ -148,8 +148,8 @@ public class InstallName extends org.apache.avro.specific.SpecificRecordBase imp
    * Creates a new InstallName RecordBuilder.
    * @return A new InstallName RecordBuilder
    */
-  public static com.example.publisherdemo.voipworkorder.dto.avro.req.InstallName.Builder newBuilder() {
-    return new com.example.publisherdemo.voipworkorder.dto.avro.req.InstallName.Builder();
+  public static com.hughes.billing.voipworkorder.dto.avro.req.InstallName.Builder newBuilder() {
+    return new com.hughes.billing.voipworkorder.dto.avro.req.InstallName.Builder();
   }
 
   /**
@@ -157,8 +157,8 @@ public class InstallName extends org.apache.avro.specific.SpecificRecordBase imp
    * @param other The existing builder to copy.
    * @return A new InstallName RecordBuilder
    */
-  public static com.example.publisherdemo.voipworkorder.dto.avro.req.InstallName.Builder newBuilder(com.example.publisherdemo.voipworkorder.dto.avro.req.InstallName.Builder other) {
-    return new com.example.publisherdemo.voipworkorder.dto.avro.req.InstallName.Builder(other);
+  public static com.hughes.billing.voipworkorder.dto.avro.req.InstallName.Builder newBuilder(com.hughes.billing.voipworkorder.dto.avro.req.InstallName.Builder other) {
+    return new com.hughes.billing.voipworkorder.dto.avro.req.InstallName.Builder(other);
   }
 
   /**
@@ -166,8 +166,8 @@ public class InstallName extends org.apache.avro.specific.SpecificRecordBase imp
    * @param other The existing instance to copy.
    * @return A new InstallName RecordBuilder
    */
-  public static com.example.publisherdemo.voipworkorder.dto.avro.req.InstallName.Builder newBuilder(com.example.publisherdemo.voipworkorder.dto.avro.req.InstallName other) {
-    return new com.example.publisherdemo.voipworkorder.dto.avro.req.InstallName.Builder(other);
+  public static com.hughes.billing.voipworkorder.dto.avro.req.InstallName.Builder newBuilder(com.hughes.billing.voipworkorder.dto.avro.req.InstallName other) {
+    return new com.hughes.billing.voipworkorder.dto.avro.req.InstallName.Builder(other);
   }
 
   /**
@@ -189,7 +189,7 @@ public class InstallName extends org.apache.avro.specific.SpecificRecordBase imp
      * Creates a Builder by copying an existing Builder.
      * @param other The existing Builder to copy.
      */
-    private Builder(com.example.publisherdemo.voipworkorder.dto.avro.req.InstallName.Builder other) {
+    private Builder(com.hughes.billing.voipworkorder.dto.avro.req.InstallName.Builder other) {
       super(other);
       if (isValidValue(fields()[0], other.FirstName)) {
         this.FirstName = data().deepCopy(fields()[0].schema(), other.FirstName);
@@ -209,7 +209,7 @@ public class InstallName extends org.apache.avro.specific.SpecificRecordBase imp
      * Creates a Builder by copying an existing InstallName instance
      * @param other The existing instance to copy.
      */
-    private Builder(com.example.publisherdemo.voipworkorder.dto.avro.req.InstallName other) {
+    private Builder(com.hughes.billing.voipworkorder.dto.avro.req.InstallName other) {
             super(SCHEMA$);
       if (isValidValue(fields()[0], other.FirstName)) {
         this.FirstName = data().deepCopy(fields()[0].schema(), other.FirstName);
@@ -238,7 +238,7 @@ public class InstallName extends org.apache.avro.specific.SpecificRecordBase imp
       * @param value The value of 'FirstName'.
       * @return This builder.
       */
-    public com.example.publisherdemo.voipworkorder.dto.avro.req.InstallName.Builder setFirstName(java.lang.CharSequence value) {
+    public com.hughes.billing.voipworkorder.dto.avro.req.InstallName.Builder setFirstName(java.lang.CharSequence value) {
       validate(fields()[0], value);
       this.FirstName = value;
       fieldSetFlags()[0] = true;
@@ -258,7 +258,7 @@ public class InstallName extends org.apache.avro.specific.SpecificRecordBase imp
       * Clears the value of the 'FirstName' field.
       * @return This builder.
       */
-    public com.example.publisherdemo.voipworkorder.dto.avro.req.InstallName.Builder clearFirstName() {
+    public com.hughes.billing.voipworkorder.dto.avro.req.InstallName.Builder clearFirstName() {
       FirstName = null;
       fieldSetFlags()[0] = false;
       return this;
@@ -277,7 +277,7 @@ public class InstallName extends org.apache.avro.specific.SpecificRecordBase imp
       * @param value The value of 'MiddleName'.
       * @return This builder.
       */
-    public com.example.publisherdemo.voipworkorder.dto.avro.req.InstallName.Builder setMiddleName(java.lang.CharSequence value) {
+    public com.hughes.billing.voipworkorder.dto.avro.req.InstallName.Builder setMiddleName(java.lang.CharSequence value) {
       validate(fields()[1], value);
       this.MiddleName = value;
       fieldSetFlags()[1] = true;
@@ -297,7 +297,7 @@ public class InstallName extends org.apache.avro.specific.SpecificRecordBase imp
       * Clears the value of the 'MiddleName' field.
       * @return This builder.
       */
-    public com.example.publisherdemo.voipworkorder.dto.avro.req.InstallName.Builder clearMiddleName() {
+    public com.hughes.billing.voipworkorder.dto.avro.req.InstallName.Builder clearMiddleName() {
       MiddleName = null;
       fieldSetFlags()[1] = false;
       return this;
@@ -316,7 +316,7 @@ public class InstallName extends org.apache.avro.specific.SpecificRecordBase imp
       * @param value The value of 'LastName'.
       * @return This builder.
       */
-    public com.example.publisherdemo.voipworkorder.dto.avro.req.InstallName.Builder setLastName(java.lang.CharSequence value) {
+    public com.hughes.billing.voipworkorder.dto.avro.req.InstallName.Builder setLastName(java.lang.CharSequence value) {
       validate(fields()[2], value);
       this.LastName = value;
       fieldSetFlags()[2] = true;
@@ -336,7 +336,7 @@ public class InstallName extends org.apache.avro.specific.SpecificRecordBase imp
       * Clears the value of the 'LastName' field.
       * @return This builder.
       */
-    public com.example.publisherdemo.voipworkorder.dto.avro.req.InstallName.Builder clearLastName() {
+    public com.hughes.billing.voipworkorder.dto.avro.req.InstallName.Builder clearLastName() {
       LastName = null;
       fieldSetFlags()[2] = false;
       return this;

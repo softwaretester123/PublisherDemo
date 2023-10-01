@@ -3,7 +3,7 @@
  *
  * DO NOT EDIT DIRECTLY
  */
-package com.example.publisherdemo.voipworkorder.dto.avro.ack;
+package com.hughes.billing.voipworkorder.dto.avro.ack;
 
 import org.apache.avro.specific.SpecificData;
 import org.apache.avro.message.BinaryMessageEncoder;
@@ -13,8 +13,8 @@ import org.apache.avro.message.SchemaStore;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class VoIPWorkOrderAckMsg extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -3658995769190501235L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"VoIPWorkOrderAckMsg\",\"namespace\":\"com.example.publisherdemo.voipworkorder.dto.avro.ack\",\"fields\":[{\"name\":\"MessageHeader\",\"type\":{\"type\":\"record\",\"name\":\"MessageHeader\",\"fields\":[{\"name\":\"TransactionSequenceId\",\"type\":\"string\"},{\"name\":\"TransactionDateTime\",\"type\":\"string\"},{\"name\":\"MessageName\",\"type\":\"string\"},{\"name\":\"Origin\",\"type\":\"string\"},{\"name\":\"CorrelationId\",\"type\":\"string\"}]}},{\"name\":\"MessageData\",\"type\":{\"type\":\"record\",\"name\":\"MessageData\",\"fields\":[{\"name\":\"MessageParameters\",\"type\":{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"MessageParameters\",\"fields\":[{\"name\":\"name\",\"type\":\"string\"},{\"name\":\"value\",\"type\":\"string\"}]}}},{\"name\":\"Orders\",\"type\":{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Orders\",\"fields\":[{\"name\":\"OrderInformation\",\"type\":{\"type\":\"record\",\"name\":\"OrderInformation\",\"fields\":[{\"name\":\"SAN\",\"type\":\"string\"}]}}]}}}]}}]}");
+  private static final long serialVersionUID = 5540926996579970755L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"VoIPWorkOrderAckMsg\",\"namespace\":\"com.hughes.billing.voipworkorder.dto.avro.ack\",\"fields\":[{\"name\":\"MessageHeader\",\"type\":{\"type\":\"record\",\"name\":\"MessageHeader\",\"fields\":[{\"name\":\"TransactionSequenceId\",\"type\":\"string\"},{\"name\":\"TransactionDateTime\",\"type\":\"string\"},{\"name\":\"MessageName\",\"type\":\"string\"},{\"name\":\"Origin\",\"type\":\"string\"},{\"name\":\"CorrelationId\",\"type\":\"string\"}]}},{\"name\":\"MessageData\",\"type\":{\"type\":\"record\",\"name\":\"MessageData\",\"fields\":[{\"name\":\"MessageParameters\",\"type\":{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"MessageParameters\",\"fields\":[{\"name\":\"name\",\"type\":\"string\"},{\"name\":\"value\",\"type\":\"string\"}]}}},{\"name\":\"Orders\",\"type\":{\"type\":\"array\",\"items\":{\"type\":\"record\",\"name\":\"Orders\",\"fields\":[{\"name\":\"OrderInformation\",\"type\":{\"type\":\"record\",\"name\":\"OrderInformation\",\"fields\":[{\"name\":\"SAN\",\"type\":\"string\"}]}}]}}}]}}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
 
   private static SpecificData MODEL$ = new SpecificData();
@@ -51,8 +51,8 @@ public class VoIPWorkOrderAckMsg extends org.apache.avro.specific.SpecificRecord
     return DECODER.decode(b);
   }
 
-  @Deprecated public com.example.publisherdemo.voipworkorder.dto.avro.ack.MessageHeader MessageHeader;
-  @Deprecated public com.example.publisherdemo.voipworkorder.dto.avro.ack.MessageData MessageData;
+  @Deprecated public com.hughes.billing.voipworkorder.dto.avro.ack.MessageHeader MessageHeader;
+  @Deprecated public com.hughes.billing.voipworkorder.dto.avro.ack.MessageData MessageData;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -66,7 +66,7 @@ public class VoIPWorkOrderAckMsg extends org.apache.avro.specific.SpecificRecord
    * @param MessageHeader The new value for MessageHeader
    * @param MessageData The new value for MessageData
    */
-  public VoIPWorkOrderAckMsg(com.example.publisherdemo.voipworkorder.dto.avro.ack.MessageHeader MessageHeader, com.example.publisherdemo.voipworkorder.dto.avro.ack.MessageData MessageData) {
+  public VoIPWorkOrderAckMsg(com.hughes.billing.voipworkorder.dto.avro.ack.MessageHeader MessageHeader, com.hughes.billing.voipworkorder.dto.avro.ack.MessageData MessageData) {
     this.MessageHeader = MessageHeader;
     this.MessageData = MessageData;
   }
@@ -85,8 +85,8 @@ public class VoIPWorkOrderAckMsg extends org.apache.avro.specific.SpecificRecord
   @SuppressWarnings(value="unchecked")
   public void put(int field$, java.lang.Object value$) {
     switch (field$) {
-    case 0: MessageHeader = (com.example.publisherdemo.voipworkorder.dto.avro.ack.MessageHeader)value$; break;
-    case 1: MessageData = (com.example.publisherdemo.voipworkorder.dto.avro.ack.MessageData)value$; break;
+    case 0: MessageHeader = (com.hughes.billing.voipworkorder.dto.avro.ack.MessageHeader)value$; break;
+    case 1: MessageData = (com.hughes.billing.voipworkorder.dto.avro.ack.MessageData)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -95,7 +95,7 @@ public class VoIPWorkOrderAckMsg extends org.apache.avro.specific.SpecificRecord
    * Gets the value of the 'MessageHeader' field.
    * @return The value of the 'MessageHeader' field.
    */
-  public com.example.publisherdemo.voipworkorder.dto.avro.ack.MessageHeader getMessageHeader() {
+  public com.hughes.billing.voipworkorder.dto.avro.ack.MessageHeader getMessageHeader() {
     return MessageHeader;
   }
 
@@ -103,7 +103,7 @@ public class VoIPWorkOrderAckMsg extends org.apache.avro.specific.SpecificRecord
    * Sets the value of the 'MessageHeader' field.
    * @param value the value to set.
    */
-  public void setMessageHeader(com.example.publisherdemo.voipworkorder.dto.avro.ack.MessageHeader value) {
+  public void setMessageHeader(com.hughes.billing.voipworkorder.dto.avro.ack.MessageHeader value) {
     this.MessageHeader = value;
   }
 
@@ -111,7 +111,7 @@ public class VoIPWorkOrderAckMsg extends org.apache.avro.specific.SpecificRecord
    * Gets the value of the 'MessageData' field.
    * @return The value of the 'MessageData' field.
    */
-  public com.example.publisherdemo.voipworkorder.dto.avro.ack.MessageData getMessageData() {
+  public com.hughes.billing.voipworkorder.dto.avro.ack.MessageData getMessageData() {
     return MessageData;
   }
 
@@ -119,7 +119,7 @@ public class VoIPWorkOrderAckMsg extends org.apache.avro.specific.SpecificRecord
    * Sets the value of the 'MessageData' field.
    * @param value the value to set.
    */
-  public void setMessageData(com.example.publisherdemo.voipworkorder.dto.avro.ack.MessageData value) {
+  public void setMessageData(com.hughes.billing.voipworkorder.dto.avro.ack.MessageData value) {
     this.MessageData = value;
   }
 
@@ -127,8 +127,8 @@ public class VoIPWorkOrderAckMsg extends org.apache.avro.specific.SpecificRecord
    * Creates a new VoIPWorkOrderAckMsg RecordBuilder.
    * @return A new VoIPWorkOrderAckMsg RecordBuilder
    */
-  public static com.example.publisherdemo.voipworkorder.dto.avro.ack.VoIPWorkOrderAckMsg.Builder newBuilder() {
-    return new com.example.publisherdemo.voipworkorder.dto.avro.ack.VoIPWorkOrderAckMsg.Builder();
+  public static com.hughes.billing.voipworkorder.dto.avro.ack.VoIPWorkOrderAckMsg.Builder newBuilder() {
+    return new com.hughes.billing.voipworkorder.dto.avro.ack.VoIPWorkOrderAckMsg.Builder();
   }
 
   /**
@@ -136,8 +136,8 @@ public class VoIPWorkOrderAckMsg extends org.apache.avro.specific.SpecificRecord
    * @param other The existing builder to copy.
    * @return A new VoIPWorkOrderAckMsg RecordBuilder
    */
-  public static com.example.publisherdemo.voipworkorder.dto.avro.ack.VoIPWorkOrderAckMsg.Builder newBuilder(com.example.publisherdemo.voipworkorder.dto.avro.ack.VoIPWorkOrderAckMsg.Builder other) {
-    return new com.example.publisherdemo.voipworkorder.dto.avro.ack.VoIPWorkOrderAckMsg.Builder(other);
+  public static com.hughes.billing.voipworkorder.dto.avro.ack.VoIPWorkOrderAckMsg.Builder newBuilder(com.hughes.billing.voipworkorder.dto.avro.ack.VoIPWorkOrderAckMsg.Builder other) {
+    return new com.hughes.billing.voipworkorder.dto.avro.ack.VoIPWorkOrderAckMsg.Builder(other);
   }
 
   /**
@@ -145,8 +145,8 @@ public class VoIPWorkOrderAckMsg extends org.apache.avro.specific.SpecificRecord
    * @param other The existing instance to copy.
    * @return A new VoIPWorkOrderAckMsg RecordBuilder
    */
-  public static com.example.publisherdemo.voipworkorder.dto.avro.ack.VoIPWorkOrderAckMsg.Builder newBuilder(com.example.publisherdemo.voipworkorder.dto.avro.ack.VoIPWorkOrderAckMsg other) {
-    return new com.example.publisherdemo.voipworkorder.dto.avro.ack.VoIPWorkOrderAckMsg.Builder(other);
+  public static com.hughes.billing.voipworkorder.dto.avro.ack.VoIPWorkOrderAckMsg.Builder newBuilder(com.hughes.billing.voipworkorder.dto.avro.ack.VoIPWorkOrderAckMsg other) {
+    return new com.hughes.billing.voipworkorder.dto.avro.ack.VoIPWorkOrderAckMsg.Builder(other);
   }
 
   /**
@@ -155,10 +155,10 @@ public class VoIPWorkOrderAckMsg extends org.apache.avro.specific.SpecificRecord
   public static class Builder extends org.apache.avro.specific.SpecificRecordBuilderBase<VoIPWorkOrderAckMsg>
     implements org.apache.avro.data.RecordBuilder<VoIPWorkOrderAckMsg> {
 
-    private com.example.publisherdemo.voipworkorder.dto.avro.ack.MessageHeader MessageHeader;
-    private com.example.publisherdemo.voipworkorder.dto.avro.ack.MessageHeader.Builder MessageHeaderBuilder;
-    private com.example.publisherdemo.voipworkorder.dto.avro.ack.MessageData MessageData;
-    private com.example.publisherdemo.voipworkorder.dto.avro.ack.MessageData.Builder MessageDataBuilder;
+    private com.hughes.billing.voipworkorder.dto.avro.ack.MessageHeader MessageHeader;
+    private com.hughes.billing.voipworkorder.dto.avro.ack.MessageHeader.Builder MessageHeaderBuilder;
+    private com.hughes.billing.voipworkorder.dto.avro.ack.MessageData MessageData;
+    private com.hughes.billing.voipworkorder.dto.avro.ack.MessageData.Builder MessageDataBuilder;
 
     /** Creates a new Builder */
     private Builder() {
@@ -169,21 +169,21 @@ public class VoIPWorkOrderAckMsg extends org.apache.avro.specific.SpecificRecord
      * Creates a Builder by copying an existing Builder.
      * @param other The existing Builder to copy.
      */
-    private Builder(com.example.publisherdemo.voipworkorder.dto.avro.ack.VoIPWorkOrderAckMsg.Builder other) {
+    private Builder(com.hughes.billing.voipworkorder.dto.avro.ack.VoIPWorkOrderAckMsg.Builder other) {
       super(other);
       if (isValidValue(fields()[0], other.MessageHeader)) {
         this.MessageHeader = data().deepCopy(fields()[0].schema(), other.MessageHeader);
         fieldSetFlags()[0] = true;
       }
       if (other.hasMessageHeaderBuilder()) {
-        this.MessageHeaderBuilder = com.example.publisherdemo.voipworkorder.dto.avro.ack.MessageHeader.newBuilder(other.getMessageHeaderBuilder());
+        this.MessageHeaderBuilder = com.hughes.billing.voipworkorder.dto.avro.ack.MessageHeader.newBuilder(other.getMessageHeaderBuilder());
       }
       if (isValidValue(fields()[1], other.MessageData)) {
         this.MessageData = data().deepCopy(fields()[1].schema(), other.MessageData);
         fieldSetFlags()[1] = true;
       }
       if (other.hasMessageDataBuilder()) {
-        this.MessageDataBuilder = com.example.publisherdemo.voipworkorder.dto.avro.ack.MessageData.newBuilder(other.getMessageDataBuilder());
+        this.MessageDataBuilder = com.hughes.billing.voipworkorder.dto.avro.ack.MessageData.newBuilder(other.getMessageDataBuilder());
       }
     }
 
@@ -191,7 +191,7 @@ public class VoIPWorkOrderAckMsg extends org.apache.avro.specific.SpecificRecord
      * Creates a Builder by copying an existing VoIPWorkOrderAckMsg instance
      * @param other The existing instance to copy.
      */
-    private Builder(com.example.publisherdemo.voipworkorder.dto.avro.ack.VoIPWorkOrderAckMsg other) {
+    private Builder(com.hughes.billing.voipworkorder.dto.avro.ack.VoIPWorkOrderAckMsg other) {
             super(SCHEMA$);
       if (isValidValue(fields()[0], other.MessageHeader)) {
         this.MessageHeader = data().deepCopy(fields()[0].schema(), other.MessageHeader);
@@ -209,7 +209,7 @@ public class VoIPWorkOrderAckMsg extends org.apache.avro.specific.SpecificRecord
       * Gets the value of the 'MessageHeader' field.
       * @return The value.
       */
-    public com.example.publisherdemo.voipworkorder.dto.avro.ack.MessageHeader getMessageHeader() {
+    public com.hughes.billing.voipworkorder.dto.avro.ack.MessageHeader getMessageHeader() {
       return MessageHeader;
     }
 
@@ -218,7 +218,7 @@ public class VoIPWorkOrderAckMsg extends org.apache.avro.specific.SpecificRecord
       * @param value The value of 'MessageHeader'.
       * @return This builder.
       */
-    public com.example.publisherdemo.voipworkorder.dto.avro.ack.VoIPWorkOrderAckMsg.Builder setMessageHeader(com.example.publisherdemo.voipworkorder.dto.avro.ack.MessageHeader value) {
+    public com.hughes.billing.voipworkorder.dto.avro.ack.VoIPWorkOrderAckMsg.Builder setMessageHeader(com.hughes.billing.voipworkorder.dto.avro.ack.MessageHeader value) {
       validate(fields()[0], value);
       this.MessageHeaderBuilder = null;
       this.MessageHeader = value;
@@ -238,12 +238,12 @@ public class VoIPWorkOrderAckMsg extends org.apache.avro.specific.SpecificRecord
      * Gets the Builder instance for the 'MessageHeader' field and creates one if it doesn't exist yet.
      * @return This builder.
      */
-    public com.example.publisherdemo.voipworkorder.dto.avro.ack.MessageHeader.Builder getMessageHeaderBuilder() {
+    public com.hughes.billing.voipworkorder.dto.avro.ack.MessageHeader.Builder getMessageHeaderBuilder() {
       if (MessageHeaderBuilder == null) {
         if (hasMessageHeader()) {
-          setMessageHeaderBuilder(com.example.publisherdemo.voipworkorder.dto.avro.ack.MessageHeader.newBuilder(MessageHeader));
+          setMessageHeaderBuilder(com.hughes.billing.voipworkorder.dto.avro.ack.MessageHeader.newBuilder(MessageHeader));
         } else {
-          setMessageHeaderBuilder(com.example.publisherdemo.voipworkorder.dto.avro.ack.MessageHeader.newBuilder());
+          setMessageHeaderBuilder(com.hughes.billing.voipworkorder.dto.avro.ack.MessageHeader.newBuilder());
         }
       }
       return MessageHeaderBuilder;
@@ -254,7 +254,7 @@ public class VoIPWorkOrderAckMsg extends org.apache.avro.specific.SpecificRecord
      * @param value The builder instance that must be set.
      * @return This builder.
      */
-    public com.example.publisherdemo.voipworkorder.dto.avro.ack.VoIPWorkOrderAckMsg.Builder setMessageHeaderBuilder(com.example.publisherdemo.voipworkorder.dto.avro.ack.MessageHeader.Builder value) {
+    public com.hughes.billing.voipworkorder.dto.avro.ack.VoIPWorkOrderAckMsg.Builder setMessageHeaderBuilder(com.hughes.billing.voipworkorder.dto.avro.ack.MessageHeader.Builder value) {
       clearMessageHeader();
       MessageHeaderBuilder = value;
       return this;
@@ -272,7 +272,7 @@ public class VoIPWorkOrderAckMsg extends org.apache.avro.specific.SpecificRecord
       * Clears the value of the 'MessageHeader' field.
       * @return This builder.
       */
-    public com.example.publisherdemo.voipworkorder.dto.avro.ack.VoIPWorkOrderAckMsg.Builder clearMessageHeader() {
+    public com.hughes.billing.voipworkorder.dto.avro.ack.VoIPWorkOrderAckMsg.Builder clearMessageHeader() {
       MessageHeader = null;
       MessageHeaderBuilder = null;
       fieldSetFlags()[0] = false;
@@ -283,7 +283,7 @@ public class VoIPWorkOrderAckMsg extends org.apache.avro.specific.SpecificRecord
       * Gets the value of the 'MessageData' field.
       * @return The value.
       */
-    public com.example.publisherdemo.voipworkorder.dto.avro.ack.MessageData getMessageData() {
+    public com.hughes.billing.voipworkorder.dto.avro.ack.MessageData getMessageData() {
       return MessageData;
     }
 
@@ -292,7 +292,7 @@ public class VoIPWorkOrderAckMsg extends org.apache.avro.specific.SpecificRecord
       * @param value The value of 'MessageData'.
       * @return This builder.
       */
-    public com.example.publisherdemo.voipworkorder.dto.avro.ack.VoIPWorkOrderAckMsg.Builder setMessageData(com.example.publisherdemo.voipworkorder.dto.avro.ack.MessageData value) {
+    public com.hughes.billing.voipworkorder.dto.avro.ack.VoIPWorkOrderAckMsg.Builder setMessageData(com.hughes.billing.voipworkorder.dto.avro.ack.MessageData value) {
       validate(fields()[1], value);
       this.MessageDataBuilder = null;
       this.MessageData = value;
@@ -312,12 +312,12 @@ public class VoIPWorkOrderAckMsg extends org.apache.avro.specific.SpecificRecord
      * Gets the Builder instance for the 'MessageData' field and creates one if it doesn't exist yet.
      * @return This builder.
      */
-    public com.example.publisherdemo.voipworkorder.dto.avro.ack.MessageData.Builder getMessageDataBuilder() {
+    public com.hughes.billing.voipworkorder.dto.avro.ack.MessageData.Builder getMessageDataBuilder() {
       if (MessageDataBuilder == null) {
         if (hasMessageData()) {
-          setMessageDataBuilder(com.example.publisherdemo.voipworkorder.dto.avro.ack.MessageData.newBuilder(MessageData));
+          setMessageDataBuilder(com.hughes.billing.voipworkorder.dto.avro.ack.MessageData.newBuilder(MessageData));
         } else {
-          setMessageDataBuilder(com.example.publisherdemo.voipworkorder.dto.avro.ack.MessageData.newBuilder());
+          setMessageDataBuilder(com.hughes.billing.voipworkorder.dto.avro.ack.MessageData.newBuilder());
         }
       }
       return MessageDataBuilder;
@@ -328,7 +328,7 @@ public class VoIPWorkOrderAckMsg extends org.apache.avro.specific.SpecificRecord
      * @param value The builder instance that must be set.
      * @return This builder.
      */
-    public com.example.publisherdemo.voipworkorder.dto.avro.ack.VoIPWorkOrderAckMsg.Builder setMessageDataBuilder(com.example.publisherdemo.voipworkorder.dto.avro.ack.MessageData.Builder value) {
+    public com.hughes.billing.voipworkorder.dto.avro.ack.VoIPWorkOrderAckMsg.Builder setMessageDataBuilder(com.hughes.billing.voipworkorder.dto.avro.ack.MessageData.Builder value) {
       clearMessageData();
       MessageDataBuilder = value;
       return this;
@@ -346,7 +346,7 @@ public class VoIPWorkOrderAckMsg extends org.apache.avro.specific.SpecificRecord
       * Clears the value of the 'MessageData' field.
       * @return This builder.
       */
-    public com.example.publisherdemo.voipworkorder.dto.avro.ack.VoIPWorkOrderAckMsg.Builder clearMessageData() {
+    public com.hughes.billing.voipworkorder.dto.avro.ack.VoIPWorkOrderAckMsg.Builder clearMessageData() {
       MessageData = null;
       MessageDataBuilder = null;
       fieldSetFlags()[1] = false;
@@ -361,12 +361,12 @@ public class VoIPWorkOrderAckMsg extends org.apache.avro.specific.SpecificRecord
         if (MessageHeaderBuilder != null) {
           record.MessageHeader = this.MessageHeaderBuilder.build();
         } else {
-          record.MessageHeader = fieldSetFlags()[0] ? this.MessageHeader : (com.example.publisherdemo.voipworkorder.dto.avro.ack.MessageHeader) defaultValue(fields()[0]);
+          record.MessageHeader = fieldSetFlags()[0] ? this.MessageHeader : (com.hughes.billing.voipworkorder.dto.avro.ack.MessageHeader) defaultValue(fields()[0]);
         }
         if (MessageDataBuilder != null) {
           record.MessageData = this.MessageDataBuilder.build();
         } else {
-          record.MessageData = fieldSetFlags()[1] ? this.MessageData : (com.example.publisherdemo.voipworkorder.dto.avro.ack.MessageData) defaultValue(fields()[1]);
+          record.MessageData = fieldSetFlags()[1] ? this.MessageData : (com.hughes.billing.voipworkorder.dto.avro.ack.MessageData) defaultValue(fields()[1]);
         }
         return record;
       } catch (java.lang.Exception e) {

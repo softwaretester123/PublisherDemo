@@ -3,7 +3,7 @@
  *
  * DO NOT EDIT DIRECTLY
  */
-package com.example.publisherdemo.voipworkorder.dto.avro.req;
+package com.hughes.billing.voipworkorder.dto.avro.ack;
 
 import org.apache.avro.specific.SpecificData;
 import org.apache.avro.message.BinaryMessageEncoder;
@@ -12,23 +12,23 @@ import org.apache.avro.message.SchemaStore;
 
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
-public class OrderAttributes extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 118676496818350197L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"OrderAttributes\",\"namespace\":\"com.example.publisherdemo.voipworkorder.dto.avro.req\",\"fields\":[{\"name\":\"name\",\"type\":\"string\"},{\"name\":\"value\",\"type\":\"string\"}]}");
+public class MessageParameters extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
+  private static final long serialVersionUID = 2296222633939278303L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"MessageParameters\",\"namespace\":\"com.hughes.billing.voipworkorder.dto.avro.ack\",\"fields\":[{\"name\":\"name\",\"type\":\"string\"},{\"name\":\"value\",\"type\":\"string\"}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
 
   private static SpecificData MODEL$ = new SpecificData();
 
-  private static final BinaryMessageEncoder<OrderAttributes> ENCODER =
-      new BinaryMessageEncoder<OrderAttributes>(MODEL$, SCHEMA$);
+  private static final BinaryMessageEncoder<MessageParameters> ENCODER =
+      new BinaryMessageEncoder<MessageParameters>(MODEL$, SCHEMA$);
 
-  private static final BinaryMessageDecoder<OrderAttributes> DECODER =
-      new BinaryMessageDecoder<OrderAttributes>(MODEL$, SCHEMA$);
+  private static final BinaryMessageDecoder<MessageParameters> DECODER =
+      new BinaryMessageDecoder<MessageParameters>(MODEL$, SCHEMA$);
 
   /**
    * Return the BinaryMessageDecoder instance used by this class.
    */
-  public static BinaryMessageDecoder<OrderAttributes> getDecoder() {
+  public static BinaryMessageDecoder<MessageParameters> getDecoder() {
     return DECODER;
   }
 
@@ -36,17 +36,17 @@ public class OrderAttributes extends org.apache.avro.specific.SpecificRecordBase
    * Create a new BinaryMessageDecoder instance for this class that uses the specified {@link SchemaStore}.
    * @param resolver a {@link SchemaStore} used to find schemas by fingerprint
    */
-  public static BinaryMessageDecoder<OrderAttributes> createDecoder(SchemaStore resolver) {
-    return new BinaryMessageDecoder<OrderAttributes>(MODEL$, SCHEMA$, resolver);
+  public static BinaryMessageDecoder<MessageParameters> createDecoder(SchemaStore resolver) {
+    return new BinaryMessageDecoder<MessageParameters>(MODEL$, SCHEMA$, resolver);
   }
 
-  /** Serializes this OrderAttributes to a ByteBuffer. */
+  /** Serializes this MessageParameters to a ByteBuffer. */
   public java.nio.ByteBuffer toByteBuffer() throws java.io.IOException {
     return ENCODER.encode(this);
   }
 
-  /** Deserializes a OrderAttributes from a ByteBuffer. */
-  public static OrderAttributes fromByteBuffer(
+  /** Deserializes a MessageParameters from a ByteBuffer. */
+  public static MessageParameters fromByteBuffer(
       java.nio.ByteBuffer b) throws java.io.IOException {
     return DECODER.decode(b);
   }
@@ -59,14 +59,14 @@ public class OrderAttributes extends org.apache.avro.specific.SpecificRecordBase
    * to their default values from the schema.  If that is desired then
    * one should use <code>newBuilder()</code>.
    */
-  public OrderAttributes() {}
+  public MessageParameters() {}
 
   /**
    * All-args constructor.
    * @param name The new value for name
    * @param value The new value for value
    */
-  public OrderAttributes(java.lang.CharSequence name, java.lang.CharSequence value) {
+  public MessageParameters(java.lang.CharSequence name, java.lang.CharSequence value) {
     this.name = name;
     this.value = value;
   }
@@ -124,36 +124,36 @@ public class OrderAttributes extends org.apache.avro.specific.SpecificRecordBase
   }
 
   /**
-   * Creates a new OrderAttributes RecordBuilder.
-   * @return A new OrderAttributes RecordBuilder
+   * Creates a new MessageParameters RecordBuilder.
+   * @return A new MessageParameters RecordBuilder
    */
-  public static com.example.publisherdemo.voipworkorder.dto.avro.req.OrderAttributes.Builder newBuilder() {
-    return new com.example.publisherdemo.voipworkorder.dto.avro.req.OrderAttributes.Builder();
+  public static com.hughes.billing.voipworkorder.dto.avro.ack.MessageParameters.Builder newBuilder() {
+    return new com.hughes.billing.voipworkorder.dto.avro.ack.MessageParameters.Builder();
   }
 
   /**
-   * Creates a new OrderAttributes RecordBuilder by copying an existing Builder.
+   * Creates a new MessageParameters RecordBuilder by copying an existing Builder.
    * @param other The existing builder to copy.
-   * @return A new OrderAttributes RecordBuilder
+   * @return A new MessageParameters RecordBuilder
    */
-  public static com.example.publisherdemo.voipworkorder.dto.avro.req.OrderAttributes.Builder newBuilder(com.example.publisherdemo.voipworkorder.dto.avro.req.OrderAttributes.Builder other) {
-    return new com.example.publisherdemo.voipworkorder.dto.avro.req.OrderAttributes.Builder(other);
+  public static com.hughes.billing.voipworkorder.dto.avro.ack.MessageParameters.Builder newBuilder(com.hughes.billing.voipworkorder.dto.avro.ack.MessageParameters.Builder other) {
+    return new com.hughes.billing.voipworkorder.dto.avro.ack.MessageParameters.Builder(other);
   }
 
   /**
-   * Creates a new OrderAttributes RecordBuilder by copying an existing OrderAttributes instance.
+   * Creates a new MessageParameters RecordBuilder by copying an existing MessageParameters instance.
    * @param other The existing instance to copy.
-   * @return A new OrderAttributes RecordBuilder
+   * @return A new MessageParameters RecordBuilder
    */
-  public static com.example.publisherdemo.voipworkorder.dto.avro.req.OrderAttributes.Builder newBuilder(com.example.publisherdemo.voipworkorder.dto.avro.req.OrderAttributes other) {
-    return new com.example.publisherdemo.voipworkorder.dto.avro.req.OrderAttributes.Builder(other);
+  public static com.hughes.billing.voipworkorder.dto.avro.ack.MessageParameters.Builder newBuilder(com.hughes.billing.voipworkorder.dto.avro.ack.MessageParameters other) {
+    return new com.hughes.billing.voipworkorder.dto.avro.ack.MessageParameters.Builder(other);
   }
 
   /**
-   * RecordBuilder for OrderAttributes instances.
+   * RecordBuilder for MessageParameters instances.
    */
-  public static class Builder extends org.apache.avro.specific.SpecificRecordBuilderBase<OrderAttributes>
-    implements org.apache.avro.data.RecordBuilder<OrderAttributes> {
+  public static class Builder extends org.apache.avro.specific.SpecificRecordBuilderBase<MessageParameters>
+    implements org.apache.avro.data.RecordBuilder<MessageParameters> {
 
     private java.lang.CharSequence name;
     private java.lang.CharSequence value;
@@ -167,7 +167,7 @@ public class OrderAttributes extends org.apache.avro.specific.SpecificRecordBase
      * Creates a Builder by copying an existing Builder.
      * @param other The existing Builder to copy.
      */
-    private Builder(com.example.publisherdemo.voipworkorder.dto.avro.req.OrderAttributes.Builder other) {
+    private Builder(com.hughes.billing.voipworkorder.dto.avro.ack.MessageParameters.Builder other) {
       super(other);
       if (isValidValue(fields()[0], other.name)) {
         this.name = data().deepCopy(fields()[0].schema(), other.name);
@@ -180,10 +180,10 @@ public class OrderAttributes extends org.apache.avro.specific.SpecificRecordBase
     }
 
     /**
-     * Creates a Builder by copying an existing OrderAttributes instance
+     * Creates a Builder by copying an existing MessageParameters instance
      * @param other The existing instance to copy.
      */
-    private Builder(com.example.publisherdemo.voipworkorder.dto.avro.req.OrderAttributes other) {
+    private Builder(com.hughes.billing.voipworkorder.dto.avro.ack.MessageParameters other) {
             super(SCHEMA$);
       if (isValidValue(fields()[0], other.name)) {
         this.name = data().deepCopy(fields()[0].schema(), other.name);
@@ -208,7 +208,7 @@ public class OrderAttributes extends org.apache.avro.specific.SpecificRecordBase
       * @param value The value of 'name'.
       * @return This builder.
       */
-    public com.example.publisherdemo.voipworkorder.dto.avro.req.OrderAttributes.Builder setName(java.lang.CharSequence value) {
+    public com.hughes.billing.voipworkorder.dto.avro.ack.MessageParameters.Builder setName(java.lang.CharSequence value) {
       validate(fields()[0], value);
       this.name = value;
       fieldSetFlags()[0] = true;
@@ -228,7 +228,7 @@ public class OrderAttributes extends org.apache.avro.specific.SpecificRecordBase
       * Clears the value of the 'name' field.
       * @return This builder.
       */
-    public com.example.publisherdemo.voipworkorder.dto.avro.req.OrderAttributes.Builder clearName() {
+    public com.hughes.billing.voipworkorder.dto.avro.ack.MessageParameters.Builder clearName() {
       name = null;
       fieldSetFlags()[0] = false;
       return this;
@@ -247,7 +247,7 @@ public class OrderAttributes extends org.apache.avro.specific.SpecificRecordBase
       * @param value The value of 'value'.
       * @return This builder.
       */
-    public com.example.publisherdemo.voipworkorder.dto.avro.req.OrderAttributes.Builder setValue(java.lang.CharSequence value) {
+    public com.hughes.billing.voipworkorder.dto.avro.ack.MessageParameters.Builder setValue(java.lang.CharSequence value) {
       validate(fields()[1], value);
       this.value = value;
       fieldSetFlags()[1] = true;
@@ -267,7 +267,7 @@ public class OrderAttributes extends org.apache.avro.specific.SpecificRecordBase
       * Clears the value of the 'value' field.
       * @return This builder.
       */
-    public com.example.publisherdemo.voipworkorder.dto.avro.req.OrderAttributes.Builder clearValue() {
+    public com.hughes.billing.voipworkorder.dto.avro.ack.MessageParameters.Builder clearValue() {
       value = null;
       fieldSetFlags()[1] = false;
       return this;
@@ -275,9 +275,9 @@ public class OrderAttributes extends org.apache.avro.specific.SpecificRecordBase
 
     @Override
     @SuppressWarnings("unchecked")
-    public OrderAttributes build() {
+    public MessageParameters build() {
       try {
-        OrderAttributes record = new OrderAttributes();
+        MessageParameters record = new MessageParameters();
         record.name = fieldSetFlags()[0] ? this.name : (java.lang.CharSequence) defaultValue(fields()[0]);
         record.value = fieldSetFlags()[1] ? this.value : (java.lang.CharSequence) defaultValue(fields()[1]);
         return record;
@@ -288,8 +288,8 @@ public class OrderAttributes extends org.apache.avro.specific.SpecificRecordBase
   }
 
   @SuppressWarnings("unchecked")
-  private static final org.apache.avro.io.DatumWriter<OrderAttributes>
-    WRITER$ = (org.apache.avro.io.DatumWriter<OrderAttributes>)MODEL$.createDatumWriter(SCHEMA$);
+  private static final org.apache.avro.io.DatumWriter<MessageParameters>
+    WRITER$ = (org.apache.avro.io.DatumWriter<MessageParameters>)MODEL$.createDatumWriter(SCHEMA$);
 
   @Override public void writeExternal(java.io.ObjectOutput out)
     throws java.io.IOException {
@@ -297,8 +297,8 @@ public class OrderAttributes extends org.apache.avro.specific.SpecificRecordBase
   }
 
   @SuppressWarnings("unchecked")
-  private static final org.apache.avro.io.DatumReader<OrderAttributes>
-    READER$ = (org.apache.avro.io.DatumReader<OrderAttributes>)MODEL$.createDatumReader(SCHEMA$);
+  private static final org.apache.avro.io.DatumReader<MessageParameters>
+    READER$ = (org.apache.avro.io.DatumReader<MessageParameters>)MODEL$.createDatumReader(SCHEMA$);
 
   @Override public void readExternal(java.io.ObjectInput in)
     throws java.io.IOException {

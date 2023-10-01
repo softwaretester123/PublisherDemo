@@ -3,7 +3,7 @@
  *
  * DO NOT EDIT DIRECTLY
  */
-package com.example.publisherdemo.voipworkorder.dto.avro.ack;
+package com.hughes.billing.voipworkorder.dto.avro.ack;
 
 import org.apache.avro.specific.SpecificData;
 import org.apache.avro.message.BinaryMessageEncoder;
@@ -13,8 +13,8 @@ import org.apache.avro.message.SchemaStore;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Orders extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 6895445594600441153L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Orders\",\"namespace\":\"com.example.publisherdemo.voipworkorder.dto.avro.ack\",\"fields\":[{\"name\":\"OrderInformation\",\"type\":{\"type\":\"record\",\"name\":\"OrderInformation\",\"fields\":[{\"name\":\"SAN\",\"type\":\"string\"}]}}]}");
+  private static final long serialVersionUID = 8426849987432249074L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Orders\",\"namespace\":\"com.hughes.billing.voipworkorder.dto.avro.ack\",\"fields\":[{\"name\":\"OrderInformation\",\"type\":{\"type\":\"record\",\"name\":\"OrderInformation\",\"fields\":[{\"name\":\"SAN\",\"type\":\"string\"}]}}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
 
   private static SpecificData MODEL$ = new SpecificData();
@@ -51,7 +51,7 @@ public class Orders extends org.apache.avro.specific.SpecificRecordBase implemen
     return DECODER.decode(b);
   }
 
-  @Deprecated public com.example.publisherdemo.voipworkorder.dto.avro.ack.OrderInformation OrderInformation;
+  @Deprecated public com.hughes.billing.voipworkorder.dto.avro.ack.OrderInformation OrderInformation;
 
   /**
    * Default constructor.  Note that this does not initialize fields
@@ -64,7 +64,7 @@ public class Orders extends org.apache.avro.specific.SpecificRecordBase implemen
    * All-args constructor.
    * @param OrderInformation The new value for OrderInformation
    */
-  public Orders(com.example.publisherdemo.voipworkorder.dto.avro.ack.OrderInformation OrderInformation) {
+  public Orders(com.hughes.billing.voipworkorder.dto.avro.ack.OrderInformation OrderInformation) {
     this.OrderInformation = OrderInformation;
   }
 
@@ -81,7 +81,7 @@ public class Orders extends org.apache.avro.specific.SpecificRecordBase implemen
   @SuppressWarnings(value="unchecked")
   public void put(int field$, java.lang.Object value$) {
     switch (field$) {
-    case 0: OrderInformation = (com.example.publisherdemo.voipworkorder.dto.avro.ack.OrderInformation)value$; break;
+    case 0: OrderInformation = (com.hughes.billing.voipworkorder.dto.avro.ack.OrderInformation)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
   }
@@ -90,7 +90,7 @@ public class Orders extends org.apache.avro.specific.SpecificRecordBase implemen
    * Gets the value of the 'OrderInformation' field.
    * @return The value of the 'OrderInformation' field.
    */
-  public com.example.publisherdemo.voipworkorder.dto.avro.ack.OrderInformation getOrderInformation() {
+  public com.hughes.billing.voipworkorder.dto.avro.ack.OrderInformation getOrderInformation() {
     return OrderInformation;
   }
 
@@ -98,7 +98,7 @@ public class Orders extends org.apache.avro.specific.SpecificRecordBase implemen
    * Sets the value of the 'OrderInformation' field.
    * @param value the value to set.
    */
-  public void setOrderInformation(com.example.publisherdemo.voipworkorder.dto.avro.ack.OrderInformation value) {
+  public void setOrderInformation(com.hughes.billing.voipworkorder.dto.avro.ack.OrderInformation value) {
     this.OrderInformation = value;
   }
 
@@ -106,8 +106,8 @@ public class Orders extends org.apache.avro.specific.SpecificRecordBase implemen
    * Creates a new Orders RecordBuilder.
    * @return A new Orders RecordBuilder
    */
-  public static com.example.publisherdemo.voipworkorder.dto.avro.ack.Orders.Builder newBuilder() {
-    return new com.example.publisherdemo.voipworkorder.dto.avro.ack.Orders.Builder();
+  public static com.hughes.billing.voipworkorder.dto.avro.ack.Orders.Builder newBuilder() {
+    return new com.hughes.billing.voipworkorder.dto.avro.ack.Orders.Builder();
   }
 
   /**
@@ -115,8 +115,8 @@ public class Orders extends org.apache.avro.specific.SpecificRecordBase implemen
    * @param other The existing builder to copy.
    * @return A new Orders RecordBuilder
    */
-  public static com.example.publisherdemo.voipworkorder.dto.avro.ack.Orders.Builder newBuilder(com.example.publisherdemo.voipworkorder.dto.avro.ack.Orders.Builder other) {
-    return new com.example.publisherdemo.voipworkorder.dto.avro.ack.Orders.Builder(other);
+  public static com.hughes.billing.voipworkorder.dto.avro.ack.Orders.Builder newBuilder(com.hughes.billing.voipworkorder.dto.avro.ack.Orders.Builder other) {
+    return new com.hughes.billing.voipworkorder.dto.avro.ack.Orders.Builder(other);
   }
 
   /**
@@ -124,8 +124,8 @@ public class Orders extends org.apache.avro.specific.SpecificRecordBase implemen
    * @param other The existing instance to copy.
    * @return A new Orders RecordBuilder
    */
-  public static com.example.publisherdemo.voipworkorder.dto.avro.ack.Orders.Builder newBuilder(com.example.publisherdemo.voipworkorder.dto.avro.ack.Orders other) {
-    return new com.example.publisherdemo.voipworkorder.dto.avro.ack.Orders.Builder(other);
+  public static com.hughes.billing.voipworkorder.dto.avro.ack.Orders.Builder newBuilder(com.hughes.billing.voipworkorder.dto.avro.ack.Orders other) {
+    return new com.hughes.billing.voipworkorder.dto.avro.ack.Orders.Builder(other);
   }
 
   /**
@@ -134,8 +134,8 @@ public class Orders extends org.apache.avro.specific.SpecificRecordBase implemen
   public static class Builder extends org.apache.avro.specific.SpecificRecordBuilderBase<Orders>
     implements org.apache.avro.data.RecordBuilder<Orders> {
 
-    private com.example.publisherdemo.voipworkorder.dto.avro.ack.OrderInformation OrderInformation;
-    private com.example.publisherdemo.voipworkorder.dto.avro.ack.OrderInformation.Builder OrderInformationBuilder;
+    private com.hughes.billing.voipworkorder.dto.avro.ack.OrderInformation OrderInformation;
+    private com.hughes.billing.voipworkorder.dto.avro.ack.OrderInformation.Builder OrderInformationBuilder;
 
     /** Creates a new Builder */
     private Builder() {
@@ -146,14 +146,14 @@ public class Orders extends org.apache.avro.specific.SpecificRecordBase implemen
      * Creates a Builder by copying an existing Builder.
      * @param other The existing Builder to copy.
      */
-    private Builder(com.example.publisherdemo.voipworkorder.dto.avro.ack.Orders.Builder other) {
+    private Builder(com.hughes.billing.voipworkorder.dto.avro.ack.Orders.Builder other) {
       super(other);
       if (isValidValue(fields()[0], other.OrderInformation)) {
         this.OrderInformation = data().deepCopy(fields()[0].schema(), other.OrderInformation);
         fieldSetFlags()[0] = true;
       }
       if (other.hasOrderInformationBuilder()) {
-        this.OrderInformationBuilder = com.example.publisherdemo.voipworkorder.dto.avro.ack.OrderInformation.newBuilder(other.getOrderInformationBuilder());
+        this.OrderInformationBuilder = com.hughes.billing.voipworkorder.dto.avro.ack.OrderInformation.newBuilder(other.getOrderInformationBuilder());
       }
     }
 
@@ -161,7 +161,7 @@ public class Orders extends org.apache.avro.specific.SpecificRecordBase implemen
      * Creates a Builder by copying an existing Orders instance
      * @param other The existing instance to copy.
      */
-    private Builder(com.example.publisherdemo.voipworkorder.dto.avro.ack.Orders other) {
+    private Builder(com.hughes.billing.voipworkorder.dto.avro.ack.Orders other) {
             super(SCHEMA$);
       if (isValidValue(fields()[0], other.OrderInformation)) {
         this.OrderInformation = data().deepCopy(fields()[0].schema(), other.OrderInformation);
@@ -174,7 +174,7 @@ public class Orders extends org.apache.avro.specific.SpecificRecordBase implemen
       * Gets the value of the 'OrderInformation' field.
       * @return The value.
       */
-    public com.example.publisherdemo.voipworkorder.dto.avro.ack.OrderInformation getOrderInformation() {
+    public com.hughes.billing.voipworkorder.dto.avro.ack.OrderInformation getOrderInformation() {
       return OrderInformation;
     }
 
@@ -183,7 +183,7 @@ public class Orders extends org.apache.avro.specific.SpecificRecordBase implemen
       * @param value The value of 'OrderInformation'.
       * @return This builder.
       */
-    public com.example.publisherdemo.voipworkorder.dto.avro.ack.Orders.Builder setOrderInformation(com.example.publisherdemo.voipworkorder.dto.avro.ack.OrderInformation value) {
+    public com.hughes.billing.voipworkorder.dto.avro.ack.Orders.Builder setOrderInformation(com.hughes.billing.voipworkorder.dto.avro.ack.OrderInformation value) {
       validate(fields()[0], value);
       this.OrderInformationBuilder = null;
       this.OrderInformation = value;
@@ -203,12 +203,12 @@ public class Orders extends org.apache.avro.specific.SpecificRecordBase implemen
      * Gets the Builder instance for the 'OrderInformation' field and creates one if it doesn't exist yet.
      * @return This builder.
      */
-    public com.example.publisherdemo.voipworkorder.dto.avro.ack.OrderInformation.Builder getOrderInformationBuilder() {
+    public com.hughes.billing.voipworkorder.dto.avro.ack.OrderInformation.Builder getOrderInformationBuilder() {
       if (OrderInformationBuilder == null) {
         if (hasOrderInformation()) {
-          setOrderInformationBuilder(com.example.publisherdemo.voipworkorder.dto.avro.ack.OrderInformation.newBuilder(OrderInformation));
+          setOrderInformationBuilder(com.hughes.billing.voipworkorder.dto.avro.ack.OrderInformation.newBuilder(OrderInformation));
         } else {
-          setOrderInformationBuilder(com.example.publisherdemo.voipworkorder.dto.avro.ack.OrderInformation.newBuilder());
+          setOrderInformationBuilder(com.hughes.billing.voipworkorder.dto.avro.ack.OrderInformation.newBuilder());
         }
       }
       return OrderInformationBuilder;
@@ -219,7 +219,7 @@ public class Orders extends org.apache.avro.specific.SpecificRecordBase implemen
      * @param value The builder instance that must be set.
      * @return This builder.
      */
-    public com.example.publisherdemo.voipworkorder.dto.avro.ack.Orders.Builder setOrderInformationBuilder(com.example.publisherdemo.voipworkorder.dto.avro.ack.OrderInformation.Builder value) {
+    public com.hughes.billing.voipworkorder.dto.avro.ack.Orders.Builder setOrderInformationBuilder(com.hughes.billing.voipworkorder.dto.avro.ack.OrderInformation.Builder value) {
       clearOrderInformation();
       OrderInformationBuilder = value;
       return this;
@@ -237,7 +237,7 @@ public class Orders extends org.apache.avro.specific.SpecificRecordBase implemen
       * Clears the value of the 'OrderInformation' field.
       * @return This builder.
       */
-    public com.example.publisherdemo.voipworkorder.dto.avro.ack.Orders.Builder clearOrderInformation() {
+    public com.hughes.billing.voipworkorder.dto.avro.ack.Orders.Builder clearOrderInformation() {
       OrderInformation = null;
       OrderInformationBuilder = null;
       fieldSetFlags()[0] = false;
@@ -252,7 +252,7 @@ public class Orders extends org.apache.avro.specific.SpecificRecordBase implemen
         if (OrderInformationBuilder != null) {
           record.OrderInformation = this.OrderInformationBuilder.build();
         } else {
-          record.OrderInformation = fieldSetFlags()[0] ? this.OrderInformation : (com.example.publisherdemo.voipworkorder.dto.avro.ack.OrderInformation) defaultValue(fields()[0]);
+          record.OrderInformation = fieldSetFlags()[0] ? this.OrderInformation : (com.hughes.billing.voipworkorder.dto.avro.ack.OrderInformation) defaultValue(fields()[0]);
         }
         return record;
       } catch (java.lang.Exception e) {
