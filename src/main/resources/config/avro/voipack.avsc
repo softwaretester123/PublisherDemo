@@ -1,6 +1,6 @@
 {
   "name": "VoIPWorkOrderAckMsg",
-  "namespace": "com.example.publisherdemo.voipworkorder.dto.avro.res",
+  "namespace": "com.example.publisherdemo.voipworkorder.dto.avro.ack",
   "type": "record",
   "version": 1,
   "fields": [

@@ -50,7 +50,12 @@
         <dependency>
             <groupId>org.apache.avro</groupId>
             <artifactId>avro</artifactId>
-            <version>1.9.1</version>
+            <version>1.8.2</version>
+        </dependency>
+        <dependency>
+            <groupId>tech.allegro.schema.json2avro</groupId>
+            <artifactId>converter</artifactId>
+            <version>0.2.15</version>
         </dependency>
     </dependencies>
     <dependencyManagement>
@@ -89,7 +94,7 @@
             <plugin>
                 <groupId>org.apache.avro</groupId>
                 <artifactId>avro-maven-plugin</artifactId>
-                <version>1.9.0</version>
+                <version>1.8.2</version>
                 <executions>
                     <execution>
                         <phase>generate-sources</phase>
@@ -97,10 +102,10 @@
                             <goal>schema</goal>
                         </goals>
                         <configuration>
-                            <sourceDirectory>src/main/resources/config/avro/</sourceDirectory>
+                            <sourceDirectory>src/main/resources/newconfig/avro</sourceDirectory>
                             <outputDirectory>${project.basedir}/src/main/java/</outputDirectory>
                             <includes>
-                                <include>**/*.avsc</include>
+                                <include>*.avsc</include>
                             </includes>
                         </configuration>
                     </execution>

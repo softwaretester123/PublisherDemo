@@ -31,3 +31,8 @@ build/
 
 ### VS Code ###
 .vscode/
+
+*.zip
+
+/external_packages/
+/backup_files/
