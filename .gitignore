@@ -33,6 +33,7 @@ build/
 .vscode/
 
 *.zip
+*.jar
 
-/external_packages/
+external_packages
 /backup_files/
