@@ -1,14 +1,13 @@
 {
-  "name": "VoIPWorkOrderAckMsg",
-  "namespace": "com.example.publisherdemo.voipworkorder.dto.avro.ack",
   "type": "record",
-  "version": 1,
+  "name": "VoIPWorkOrderAckMsg",
+  "namespace": "com.hughes.billing.voipworkorder.dto.avro.ack",
   "fields": [
     {
       "name": "MessageHeader",
       "type": {
-        "name": "MessageHeader",
         "type": "record",
+        "name": "MessageHeader",
         "fields": [
           {
             "name": "TransactionSequenceId",
@@ -24,11 +23,7 @@
           },
           {
             "name": "Origin",
-            "type": [
-              "null",
-              "string"
-            ],
-            "default": null
+            "type": "string"
           },
           {
             "name": "CorrelationId",
@@ -39,52 +34,70 @@
     },
     {
       "name": "MessageData",
-      "type": ["null", {
+      "type": {
         "type": "record",
         "name": "MessageData",
-        "fields": [{
-          "name": "MessageParameters",
-          "type": ["null", {
-            "type": "array",
-            "items": ["null", {
-              "type": "record",
-              "name": "MessageParameter",
-              "fields": [{
-                "name": "name",
-                "type": ["null", "string"]
-              }, {
-                "name": "value",
-                "type": ["null", "string"]
-              }]
-            }]
-          }],
-          "default": null
-        }, {
-          "name": "Orders",
-          "type": ["null", {
-            "type": "array",
-            "items": ["null", {
-              "type": "record",
-              "name": "Order",
-              "fields": [
-                {
-                  "name": "OrderInformation",
-                  "type": ["null", {
-                    "type": "record",
+        "fields": [
+          {
+            "name": "MessageParameters",
+            "type": {
+              "type": "array",
+              "items": {
+                "type": "record",
+                "name": "MessageParameters",
+                "fields": [
+                  {
+                    "name": "name",
+                    "type": "string"
+                  },
+                  {
+                    "name": "value",
+                    "type": "string"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "name": "Orders",
+            "type": {
+              "type": "array",
+              "items": {
+                "type": "record",
+                "name": "Orders",
+                "fields": [
+                  {
                     "name": "OrderInformation",
-                    "fields": [{
-                      "name": "SAN",
-                      "type": ["null", "string"]
-                    }]
-                  }],
-                  "default": null
-                }]
-            }]
-          }],
-          "default": null
-        }]
-      }],
-      "default": null
+                    "type": {
+                      "type": "record",
+                      "name": "OrderInformation",
+                      "fields": [
+                        {
+                          "name": "SAN",
+                          "type": "string"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "headers",
+      "type": {
+        "type": "record",
+        "name": "headers",
+        "fields": [
+          {
+            "name": "KEY",
+            "type": "string"
+          }
+        ]
+      }
     }
   ]
 }

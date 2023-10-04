@@ -35,5 +35,5 @@ build/
 *.zip
 *.jar
 
-external_packages
 /backup_files/
+/external_packages/
