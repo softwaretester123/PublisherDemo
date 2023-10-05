@@ -32,8 +32,8 @@ build/
 ### VS Code ###
 .vscode/
 
-*.zip
-*.jar
-
 /backup_files/
 /external_packages/
+
+*.zip
+*.jar
