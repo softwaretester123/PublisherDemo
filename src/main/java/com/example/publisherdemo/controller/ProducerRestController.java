@@ -1,5 +1,6 @@
 package com.example.publisherdemo.controller;
 
+import com.example.publisherdemo.actuator.PublishWithOrderingKey;
 import com.example.publisherdemo.gateway.OutboundChanel;
 import com.hughes.billing.voipworkorder.dto.avro.req.VoIPWorkOrder;
 import lombok.extern.slf4j.Slf4j;
@@ -19,8 +20,8 @@ import java.io.ByteArrayOutputStream;
 @Slf4j
 public class ProducerRestController {
 
-    @Autowired
-    OutboundChanel gateway;
+//    @Autowired
+//    OutboundChanel gateway;
 
     @PostMapping("/publishMessage")
     public String publishMessage(@RequestBody VoIPWorkOrder request) {
@@ -36,7 +37,8 @@ public class ProducerRestController {
             writer.write(voIPWorkOrder, jsonEncoder);
             jsonEncoder.flush();
             data = stream.toByteArray();
-            gateway.sendMsgToPubSub(new String(data));
+//            gateway.sendMsgToPubSub(new String(data));
+            PublishWithOrderingKey.publishWithOrderingKeysExample(new String(data));
         } catch (Exception e) {
             log.error("Exception occur in serializing : ", e);
             return "Exception occur in serializing";
